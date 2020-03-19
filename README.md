@@ -2,11 +2,9 @@
 
 This is EdgeHub fuzzer for EdgeHub UI testing. I'll demonstrate how to execute the script file. If end the testing, let me know your result @Dongsoon Shin. 
 
----
 
 # Install
 
----
 
 First, to avoid the crush other modules, I recommend that make "virtualenv".
 
@@ -29,7 +27,6 @@ Now, we ready for running the script.
 
 # Running
 
----
 
 I wrote the code that predefined function and pre-necessary module using selenium in selenium_module.py. If you want to use other web sites, you should modify some code in selenium_module.py. Due to the compatibility of the web site, I cannot write the general-purpose code now (In the future, I will make a general-purpose code).
 
