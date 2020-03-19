@@ -31,7 +31,7 @@ Now, we ready for running the script.
 I wrote the code that predefined function and pre-necessary module using selenium in selenium_module.py. If you want to use other web sites, you should modify some code in selenium_module.py. Due to the compatibility of the web site, I cannot write the general-purpose code now (In the future, I will make a general-purpose code).
 
     # simple running
-    ./test.py
+    python test.py
 
 During the script is started, we have to turn off the save-power function in system configuration (such as, power-save mode, auto turn-off monitor, etc.). This is important that turn-off the power-save mode and auto-turn-off the monitor (include screen savor). 
 

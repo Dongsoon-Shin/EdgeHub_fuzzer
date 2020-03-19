@@ -10,7 +10,7 @@ driver = chrome.SetChrome()
 driver.get('localhost:1290')
 
 start = selenium_method.AddToContents()
-# start.ConfigureClear(driver)
+start.ConfigureClear(driver)
 
 # running time measure
 start_time = time.time()
