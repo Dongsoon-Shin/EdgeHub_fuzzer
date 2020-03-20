@@ -3,4 +3,4 @@ __pycache__
 interactor/
 .git
 .fuzzer
-
+!user/.keep

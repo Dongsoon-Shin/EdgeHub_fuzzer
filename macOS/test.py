@@ -1,5 +1,5 @@
 # -*- UTF-8 encoding -*-
-import os, inspect, subprocess, random, time
+import time
 import selenium_method
 import fuzzer_method
 
