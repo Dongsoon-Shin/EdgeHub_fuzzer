@@ -19,9 +19,12 @@ start.AddDevice(driver)
 start.TypeString(driver, "Device_01")
 start.Confirm(driver)
 
-for i in range(8000):
-    start.AddDeviceTag(driver, "Device_01")
-    start.Confirm(driver)
+start.AddDeviceOfDevice(driver, "Device_01")
+start.Confirm(driver)
+
+start.AddDeviceDetail(driver, "Device_01")
+for i in range(200):
+    start.AddDeviceTag(driver, str(i))
 
 print("consuming time:", time.time() - start_time)
-driver.quit()
+#driver.quit()
