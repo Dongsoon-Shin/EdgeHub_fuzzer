@@ -1,6 +1,7 @@
 import os,time, fuzzer_method
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 
 class InitDriver(object):
     def SetChrome(self):
@@ -85,12 +86,18 @@ class AddToContents(object):
         driver.execute_script("arguments[0].click();", element)
         time.sleep(0.1)
 
+        # manufacturer
+        ret = fuzzer_method.fuzz()
         driver.find_element_by_id('deviceDetail_manufacturer').send_keys(ret)
         time.sleep(0.1)
 
+        # Device type
+        ret = fuzzer_method.fuzz()
         driver.find_element_by_id('deviceDetail_device_type').send_keys(ret)
         time.sleep(0.1)
 
+        # Comment
+        ret = fuzzer_method.fuzz()
         driver.find_element_by_id('deviceDetail_comment').send_keys(ret)
         time.sleep(0.1)
 
@@ -98,6 +105,7 @@ class AddToContents(object):
         driver.execute_script("arguments[0].click();", element)
         time.sleep(0.1)
         
+        # Device service
         element = driver.find_element_by_id('deviceServiceButtonEdit')
         driver.execute_script("arguments[0].click();", element)
         time.sleep(0.1)
@@ -113,7 +121,24 @@ class AddToContents(object):
         element = driver.find_element_by_id('deviceServiceButtonDone')
         driver.execute_script("arguments[0].click();", element)
         time.sleep(0.1)
-    
+
+        element = driver.find_element_by_id('deviceConnectionButtonEdit')
+        driver.execute_script("arguments[0].click();", element)
+        time.sleep(0.1)
+
+        driver.find_element_by_id('deviceConnectionInput_uid').send_keys(Keys.BACKSPACE)
+        time.sleep(0.1)
+        driver.find_element_by_id('deviceConnectionInput_uid').send_keys(Keys.BACKSPACE)
+        time.sleep(0.1)
+        driver.find_element_by_id('deviceConnectionInput_uid').send_keys(Keys.BACKSPACE)
+        time.sleep(0.1)
+        driver.find_element_by_id('deviceConnectionInput_uid').send_keys('1')
+        time.sleep(0.1)
+
+        element = driver.find_element_by_id('deviceConnectionButtonDone')
+        driver.execute_script("arguments[0].click();", element)
+        time.sleep(0.1)
+
     def AddDeviceTag(self, driver, ret):
         element = driver.find_element_by_id('datamapperAdd')
         driver.execute_script("arguments[0].click();", element)
@@ -149,10 +174,3 @@ class AddToContents(object):
         element = driver.find_element_by_id('datamapperAddDone')
         driver.execute_script("arguments[0].click();", element)
         time.sleep(0.1)
-
-
-
-
-        
-
- 
