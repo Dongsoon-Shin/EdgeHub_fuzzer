@@ -2,11 +2,9 @@
 
 This is EdgeHub fuzzer for EdgeHub UI testing. I'll demonstrate how to execute the script file. If end the testing, let me know your result @Dongsoon Shin. 
 
----
 
 # Install
 
----
 
 ### Virtualenv
 
@@ -19,7 +17,7 @@ If you execute the above code, you cannot see the .venv folder if you use a Linu
 
     source .venv/bin/activate
 
-Now, we activated the virtualenv. If you succeed to activate the virtualenv, you can see the below shell shape. IIf you fail to activate the virtualenv, you cannot see the (.venv).
+Now, we activated the virtualenv. If you succeed to activate the virtualenv, you can see the below shell shape. If you fail to activate the virtualenv, you cannot see the (.venv).
 
     (.venv)$
 
@@ -38,8 +36,6 @@ This script run with Chromedriver. However, Chromedriver has been changing and i
 Download ChromeDriver 80 version in current releases for fit to own OS
 
 # Running
-
----
 
 I wrote the code that predefined function and pre-necessary module using selenium in selenium_module.py. If you want to use other web sites, you should modify some code in selenium_module.py. Due to the compatibility of the web site, I cannot write the general-purpose code now (In the future, I will make a general-purpose code).
 
