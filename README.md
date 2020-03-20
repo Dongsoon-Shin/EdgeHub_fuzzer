@@ -17,7 +17,7 @@ If you execute the above code, you cannot see the .venv folder if you use a Linu
 
     source .venv/bin/activate
 
-Now, we activated the virtualenv. If you succeed to activate the virtualenv, you can see the below shell shape. IIf you fail to activate the virtualenv, you cannot see the (.venv).
+Now, we activated the virtualenv. If you succeed to activate the virtualenv, you can see the below shell shape. If you fail to activate the virtualenv, you cannot see the (.venv).
 
     (.venv)$
 
