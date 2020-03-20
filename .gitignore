@@ -4,3 +4,4 @@ interactor/
 .git
 .fuzzer
 !user/.keep
+.DS_Store
