@@ -5,26 +5,47 @@ import fuzzer_method
 
 #ret = fuzzer_method.fuzz(max_length=23)
 
-chrome = selenium_method.InitDriver()
-driver = chrome.SetChrome()
-driver.get('localhost:1290')
+def DeviceTesting(start):
+    dv = fuzzer_method.fuzz(10)
+    start.AddDevice(driver)
+    start.TypeString(driver, str(dv))
+    start.Confirm(driver)
+    start.AddDeviceDetail(driver, str(dv), str(dv))
+    for num in range(200):
+        start.AddDeviceTag(driver, str(num))
 
-start = selenium_method.AddToContents()
-start.ConfigureClear(driver)
+    ret2 = start.AddDeviceOfDevice(driver, str(dv))
+    start.Confirm(driver)
+    start.AddDeviceDetail(driver, str(dv), str(ret2))
+    for i in range(200):
+        start.AddDeviceTag(driver, str(i))
+    
+    return dv
 
-# running time measure
-start_time = time.time()
+def ServerTesting(start, dv):
+    for i in range(200):
+        start.AddServer(driver)
+        start.AddServerDetail(driver)
+        for j in range(200):
+            start.AddServerTag(driver, j, dv)
 
-start.AddDevice(driver)
-start.TypeString(driver, "Device_01")
-start.Confirm(driver)
+if __name__ == "__main__":
 
-# start.AddDeviceOfDevice(driver, "Device_01")
-# start.Confirm(driver)
+    chrome = selenium_method.InitDriver()
+    driver = chrome.SetChrome()
+    driver.get('localhost:1290')
 
-start.AddDeviceDetail(driver, "Device_01")
-for i in range(200):
-    start.AddDeviceTag(driver, str(i))
+    start = selenium_method.AddToContents()
+    start.ConfigureClear(driver)
 
-print("consuming time:", time.time() - start_time)
-#driver.quit()
+    # running time measure
+    start_time = time.time()
+    print("Start time: ", start_time)
+
+    dv = DeviceTesting(start)
+    ServerTesting(start, dv)
+    start.Commit(driver)
+
+    print("consuming time:", time.time() - start_time)
+
+    #driver.quit()
