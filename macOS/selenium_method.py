@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 
 class InitDriver(object):
     def SetChrome(self):
-        driver = webdriver.Chrome('chromedriver')
+        driver = webdriver.Chrome('./chromedriver')
         return driver
 
 class AddToContents(object):

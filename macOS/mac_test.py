@@ -19,8 +19,8 @@ start.AddDevice(driver)
 start.TypeString(driver, "Device_01")
 start.Confirm(driver)
 
-start.AddDeviceOfDevice(driver, "Device_01")
-start.Confirm(driver)
+# start.AddDeviceOfDevice(driver, "Device_01")
+# start.Confirm(driver)
 
 start.AddDeviceDetail(driver, "Device_01")
 for i in range(200):
