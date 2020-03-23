@@ -1,9 +1,9 @@
 import os, inspect, subprocess, random
 
-def fuzz(max_length = 100, start = 32, end = 32):
+def fuzz(max_length = 100, start = 64, end = 127):
     out = ""
     string_length = random.randrange(max_length) + 1
     for i in range(string_length):
-        out += chr(random.randint(start, start+end))
+        out += chr(random.randint(start, end))
 
     return out
