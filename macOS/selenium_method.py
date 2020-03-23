@@ -105,16 +105,16 @@ class AddToContents(object):
         driver.execute_script("arguments[0].click();", element)
         time.sleep(0.1)
 
-        ret2 = fuzzer_method.fuzz(100,32,127)
+        ret2 = fuzzer_method.fuzz(5)
         driver.find_element_by_id('newEntityModal_deviceName_input').send_keys(ret2)
         time.sleep(0.1)
-        print(ret2)
+        # print(ret2)
 
         return ret2
 
     def AddDeviceDetail(self, driver, gret, ret):
         name = 'lineDevice_device_'+str(gret)+'_'+str(ret)
-        print(name)
+        # print(name)
         element = driver.find_element_by_id(name)
         #element = driver.find_element(By.XPATH, '//*[@id="lineDevice_device_Device_01"]')
         driver.execute_script("arguments[0].click();", element)

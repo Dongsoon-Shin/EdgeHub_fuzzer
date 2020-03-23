@@ -6,27 +6,29 @@ import fuzzer_method
 #ret = fuzzer_method.fuzz(max_length=23)
 
 def DeviceTesting(start):
-    dv = fuzzer_method.fuzz(10)
+    dv = fuzzer_method.fuzz(max_length=5)
+    print("first dv", dv)
     start.AddDevice(driver)
     start.TypeString(driver, str(dv))
     start.Confirm(driver)
     start.AddDeviceDetail(driver, str(dv), str(dv))
-    for num in range(200):
+    for num in range(3):
         start.AddDeviceTag(driver, str(num))
 
+    print("second dv", dv)
     ret2 = start.AddDeviceOfDevice(driver, str(dv))
     start.Confirm(driver)
     start.AddDeviceDetail(driver, str(dv), str(ret2))
-    for i in range(200):
+    for i in range(3):
         start.AddDeviceTag(driver, str(i))
     
     return dv
 
 def ServerTesting(start, dv):
-    for i in range(200):
+    for i in range(3):
         start.AddServer(driver)
         start.AddServerDetail(driver)
-        for j in range(200):
+        for j in range(1,3):
             start.AddServerTag(driver, j, dv)
 
 if __name__ == "__main__":
