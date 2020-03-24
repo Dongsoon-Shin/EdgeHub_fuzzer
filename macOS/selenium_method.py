@@ -29,9 +29,6 @@ class AddToContents(object):
         element = driver.find_element_by_id('top-nav-sub-edit-dropdown-clear-configuration')
         driver.execute_script("arguments[0].click();", element)
         time.sleep(0.1)
-        element = driver.find_element_by_id('commitModalCommit')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
 
     def AddDevice(self, driver):
         # add device type
@@ -51,7 +48,7 @@ class AddToContents(object):
         time.sleep(0.1)
 
         #create new group
-        element = driver.find_element_by_id('newEntityModal_Group_dropdown_option_create_new_group')
+        element = driver.find_element(By.XPATH, '//*[@id="newEntityModal_Group_dropdown"]/ul/li[1]/a')
         driver.execute_script("arguments[0].click();", element)
         time.sleep(0.1)
     

@@ -11,21 +11,21 @@ def DeviceTesting(start):
     start.TypeString(driver, str(dv))
     start.Confirm(driver)
     start.AddDeviceDetail(driver, str(dv), str(dv))
-    for num in range(20):
+    for num in range(9):
         start.AddDeviceTag(driver, str(num))
 
-    for j in range(200):
+    for j in range(20):
         ret2 = start.AddDeviceOfDevice(driver, str(dv))
         start.Confirm(driver)
         start.AddDeviceDetail(driver, str(dv), str(ret2))
         time.sleep(0.1)
-        # for i in range(9):
-        #     start.AddDeviceTag(driver, str(i))
+        for i in range(9):
+            start.AddDeviceTag(driver, str(i))
     
     return dv
 
 def ServerTesting(start, dv):
-    for i in range(200):
+    for i in range(20):
         start.AddServer(driver)
         start.AddServerDetail(driver)
         for j in range(1,21):
@@ -42,11 +42,11 @@ if __name__ == "__main__":
     start = selenium_method.AddToContents()
     start.ConfigureClear(driver)
 
-
     # running time measure
     start_time = time.time()
     print("Start time: ", start_time)
 
+    start.ConfigureClear(driver)
     dv = DeviceTesting(start)
     ServerTesting(start, dv)
     start.Commit(driver)
