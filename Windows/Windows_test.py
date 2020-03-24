@@ -6,21 +6,22 @@ import fuzzer_method
 #ret = fuzzer_method.fuzz(max_length=23)
 
 def DeviceTesting(start):
-    dv = fuzzer_method.fuzz(max_length=5)
-    start.AddDevice(driver)
-    start.TypeString(driver, str(dv))
-    start.Confirm(driver)
-    start.AddDeviceDetail(driver, str(dv), str(dv))
-    for num in range(9):
-        start.AddDeviceTag(driver, str(num))
-
-    for j in range(20):
-        ret2 = start.AddDeviceOfDevice(driver, str(dv))
+    for i in range(200):
+        dv = fuzzer_method.fuzz(max_length=19)
+        start.AddDevice(driver)
+        start.TypeString(driver, str(dv))
         start.Confirm(driver)
-        start.AddDeviceDetail(driver, str(dv), str(ret2))
-        time.sleep(0.1)
-        for i in range(9):
-            start.AddDeviceTag(driver, str(i))
+    # start.AddDeviceDetail(driver, str(dv), str(dv))
+    # for num in range(9):
+    #     start.AddDeviceTag(driver, str(num))
+
+    # for j in range(40):
+    #     ret2 = start.AddDeviceOfDevice(driver, str(dv))
+    #     start.Confirm(driver)
+    #     start.AddDeviceDetail(driver, str(dv), str(ret2))
+    #     time.sleep(0.1)
+    #     for i in range(13):
+    #         start.AddDeviceTag(driver, str(i))
     
     return dv
 
@@ -48,7 +49,7 @@ if __name__ == "__main__":
 
     start.ConfigureClear(driver)
     dv = DeviceTesting(start)
-    ServerTesting(start, dv)
+    # ServerTesting(start, dv)
     start.Commit(driver)
 
     print("consuming time:", time.time() - start_time)

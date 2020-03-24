@@ -8,8 +8,18 @@ def ByIdClicking(driver, id_name):
     driver.execute_script("arguments[0].click();", element)
     time.sleep(0.1)
 
+def ByClassClicking(driver, id_name):
+    element = driver.find_element_by_class_name(id_name)
+    driver.execute_script("arguments[0].click();", element)
+    time.sleep(0.1)
+
 def ByIdSendKey(driver, id_name, strings):
     driver.find_element_by_id(id_name).send_keys(strings)
+    time.sleep(0.1)
+
+def ByXpathClicking(driver, id_name):
+    element = driver.find_element(By.XPATH, id_name)
+    driver.execute_script("arguments[0].click();", element)
     time.sleep(0.1)
 
 class InitDriver(object):
@@ -26,10 +36,12 @@ class AddToContents(object):
     def ConfigureClear(self, driver):
         ByIdClicking(driver, 'top-nav-sub-edit-dropdown__BV_toggle_')
         ByIdClicking(driver, 'top-nav-sub-edit-dropdown-clear-configuration')
+        ByIdClicking(driver, 'commitModalCommit')
 
     def AddDevice(self, driver):
         # add device type
-        ByIdClicking(driver, 'nav-left-search-add')
+        ByClassClicking(driver, 'nav-left-search-add')
+
         ByIdClicking(driver, 'newEntityModal_Type_dropdown__BV_toggle_')
         ByIdClicking(driver, 'newEntityModal_Type_dropdown_option_Device')
 
@@ -37,12 +49,11 @@ class AddToContents(object):
         ByIdClicking(driver, 'newEntityModal_Group_dropdown__BV_toggle_')
 
         #create new group
-        ByIdClicking(driver, 'newEntityModal_Group_dropdown_option_create_new_group')
+        ByXpathClicking(driver,'//*[@id="newEntityModal_Group_dropdown"]/ul/li[1]/a')
+        # ByIdClicking(driver, 'newEntityModal_Group_dropdown_option_create_new_group')
     
     def AddServer(self, driver):
-        element = driver.find_element_by_class_name('nav-left-search-add')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
+        ByClassClicking(driver, 'nav-left-search-add')
 
         ByIdClicking(driver, 'newEntityModal_Type_dropdown__BV_toggle_')
         ByIdClicking(driver, 'newEntityModal_Type_dropdown_option_Server')
