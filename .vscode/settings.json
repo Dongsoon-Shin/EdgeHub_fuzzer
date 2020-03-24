@@ -1,3 +1,3 @@
 {
-    "python.pythonPath": "c:\\Users\\dsshin\\Documents\\GitHub\\EdgeHub_fuzzer\\.fuzzer\\Scripts\\python.exe"
+    "python.pythonPath": ".fuzzer/bin/python3.7"
 }

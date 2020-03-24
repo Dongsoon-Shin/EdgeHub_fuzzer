@@ -24,8 +24,20 @@ class AddToContents(object):
         ByIdClicking(driver, 'commitModalCommit')
 
     def ConfigureClear(self, driver):
+<<<<<<< HEAD
         ByIdClicking(driver, 'top-nav-sub-edit-dropdown__BV_toggle_')
         ByIdClicking(driver, 'top-nav-sub-edit-dropdown-clear-configuration')
+=======
+        element = driver.find_element_by_id('top-nav-sub-edit-dropdown__BV_toggle_')
+        driver.execute_script("arguments[0].click();", element)
+        time.sleep(0.1)
+        element = driver.find_element_by_id('top-nav-sub-edit-dropdown-clear-configuration')
+        driver.execute_script("arguments[0].click();", element)
+        time.sleep(0.1)
+        element = driver.find_element_by_id('commitModalCommit')
+        driver.execute_script("arguments[0].click();", element)
+        time.sleep(0.1)
+>>>>>>> 9ee78b79a18f651d16f564a7d6ce979a66685b0f
 
     def AddDevice(self, driver):
         # add device type
@@ -75,8 +87,13 @@ class AddToContents(object):
         ByIdClicking(driver, id_name)
 
         ret2 = fuzzer_method.fuzz(5)
+<<<<<<< HEAD
         ByIdSendKey(driver, 'newEntityModal_deviceName_input', ret2)
 
+=======
+        driver.find_element_by_id('newEntityModal_deviceName_input').send_keys(ret2)
+        time.sleep(0.1)
+>>>>>>> 9ee78b79a18f651d16f564a7d6ce979a66685b0f
         print("ret2 ",ret2)
 
         return ret2
