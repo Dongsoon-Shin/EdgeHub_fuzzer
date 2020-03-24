@@ -1,158 +1,199 @@
 import os,time, fuzzer_method
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+
+def ByIdClicking(driver, id_name):
+    element = driver.find_element_by_id(id_name)
+    driver.execute_script("arguments[0].click();", element)
+    time.sleep(0.1)
+
+def ByIdSendKey(driver, id_name, strings):
+    driver.find_element_by_id(id_name).send_keys(strings)
+    time.sleep(0.1)
 
 class InitDriver(object):
     def SetChrome(self):
-        driver = webdriver.Chrome('chromedriver')
+        driver = webdriver.Chrome('./chromedriver')
         return driver
 
 class AddToContents(object):
+    def Commit(self, driver):
+        ByIdClicking(driver, 'top-nav-sub-file-dropdown__BV_toggle_')
+        ByIdClicking(driver, 'top-nav-sub-file-dropdown-commit')
+        ByIdClicking(driver, 'commitModalCommit')
+
     def ConfigureClear(self, driver):
-        element = driver.find_element_by_id('top-nav-sub-edit-dropdown__BV_toggle_')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
-        element = driver.find_element_by_id('top-nav-sub-edit-dropdown-clear-configuration')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
+        ByIdClicking(driver, 'top-nav-sub-edit-dropdown__BV_toggle_')
+        ByIdClicking(driver, 'top-nav-sub-edit-dropdown-clear-configuration')
 
     def AddDevice(self, driver):
         # add device type
+        ByIdClicking(driver, 'nav-left-search-add')
+        ByIdClicking(driver, 'newEntityModal_Type_dropdown__BV_toggle_')
+        ByIdClicking(driver, 'newEntityModal_Type_dropdown_option_Device')
+
+        #add device group
+        ByIdClicking(driver, 'newEntityModal_Group_dropdown__BV_toggle_')
+
+        #create new group
+        ByIdClicking(driver, 'newEntityModal_Group_dropdown_option_create_new_group')
+    
+    def AddServer(self, driver):
         element = driver.find_element_by_class_name('nav-left-search-add')
         driver.execute_script("arguments[0].click();", element)
         time.sleep(0.1)
-        element = driver.find_element_by_id('newEntityModal_Type_dropdown__BV_toggle_')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
-        element = driver.find_element_by_id('newEntityModal_Type_dropdown_option_Device')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
 
-        #add device group
-        element = driver.find_element_by_id('newEntityModal_Group_dropdown__BV_toggle_')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
+        ByIdClicking(driver, 'newEntityModal_Type_dropdown__BV_toggle_')
+        ByIdClicking(driver, 'newEntityModal_Type_dropdown_option_Server')
 
-        #create new group
-        element = driver.find_element_by_id('newEntityModal_Group_dropdown_option_create_new_group')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
+        ret = fuzzer_method.fuzz(23)
+        ByIdSendKey(driver, 'newEntityModal_deviceName_input', ret)
+        ByIdClicking(driver, 'newEntityModal_confirm_button')
 
     def TypeString(self, driver, ret):
         #input groupname and device name
-        driver.find_element_by_id('newEntityModal_groupName_input').send_keys(ret)
-        time.sleep(0.1)
+        ByIdSendKey(driver, 'newEntityModal_groupName_input', ret)
+        ByIdSendKey(driver, 'newEntityModal_deviceName_input', ret)
 
-        driver.find_element_by_id('newEntityModal_deviceName_input').send_keys(ret)
-        time.sleep(0.1)
 
     def Confirm(self, driver):
         # click the Confirm button
-        element = driver.find_element_by_id('newEntityModal_confirm_button')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
+        ByIdClicking(driver, 'newEntityModal_confirm_button')
 
-    def AddDeviceOfDevice(self, driver, ret):
+    def AddDeviceOfDevice(self, driver, dv):
         element = driver.find_element_by_class_name('nav-left-search-add')
         driver.execute_script("arguments[0].click();", element)
         time.sleep(0.1)
-        element = driver.find_element_by_id('newEntityModal_Type_dropdown__BV_toggle_')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
-        element = driver.find_element_by_id('newEntityModal_Type_dropdown_option_Device')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
-        element = driver.find_element_by_id('newEntityModal_Group_dropdown__BV_toggle_')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
-        id_name = 'newEntityModal_Group_dropdown_option_'+str(ret)
-        #print(id_name)
-        element = driver.find_element_by_id(id_name)
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
+
+        ByIdClicking(driver, 'newEntityModal_Type_dropdown__BV_toggle_')
+        ByIdClicking(driver, 'newEntityModal_Type_dropdown_option_Device')
+        ByIdClicking(driver, 'newEntityModal_Group_dropdown__BV_toggle_')
+
+        id_name = 'newEntityModal_Group_dropdown_option_'+str(dv)
+        # print(id_name)
+        ByIdClicking(driver, id_name)
 
         ret2 = fuzzer_method.fuzz(5)
-        driver.find_element_by_id('newEntityModal_deviceName_input').send_keys(ret2)
-        time.sleep(0.1)
+        ByIdSendKey(driver, 'newEntityModal_deviceName_input', ret2)
 
-    def AddDeviceDetail(self, driver, ret):
-        element = driver.find_element_by_id('lineDevice_device_Device_01_Device_01')
-        #element = driver.find_element(By.XPATH, '//*[@id="lineDevice_device_Device_01"]')
+        print("ret2 ",ret2)
+
+        return ret2
+
+    def AddDeviceDetail(self, driver, gret, ret):
+        name = 'lineDevice_device_'+str(gret)+'_'+str(ret)
+        print(name)
+        # element = driver.find_element_by_id(name)
+        element = driver.find_element(By.XPATH, '//*[@id="lineDevice_device_' + str(gret) + '_' +str(ret) + '"]')
         driver.execute_script("arguments[0].click();", element)
         time.sleep(0.1)
 
-        element = driver.find_element_by_id('deviceDetailButtonEdit')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
+        # Edit
+        ByIdClicking(driver, 'deviceDetailButtonEdit')
 
-        driver.find_element_by_id('deviceDetail_manufacturer').send_keys(ret)
-        time.sleep(0.1)
+        # manufacturer
+        ret = fuzzer_method.fuzz()
+        ByIdSendKey(driver, 'deviceDetail_manufacturer', ret)
+        # Device type
+        ret = fuzzer_method.fuzz()
+        ByIdSendKey(driver, 'deviceDetail_device_type', ret)
+        # Comment
+        ret = fuzzer_method.fuzz(1000)
+        ByIdSendKey(driver, 'deviceDetail_comment', ret)
 
-        driver.find_element_by_id('deviceDetail_device_type').send_keys(ret)
-        time.sleep(0.1)
-
-        driver.find_element_by_id('deviceDetail_comment').send_keys(ret)
-        time.sleep(0.1)
-
-        element = driver.find_element_by_id('deviceDetailButtonDone')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
+        # Done
+        ByIdClicking(driver, 'deviceDetailButtonDone')
         
-        element = driver.find_element_by_id('deviceServiceButtonEdit')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
+        # Device service
+        ByIdClicking(driver, 'deviceServiceButtonEdit')
+        ByIdClicking(driver, 'deviceServiceSelect__BV_toggle_')
+        ByIdClicking(driver, 'deviceServiceSelect_modbus_tcp_master')
+        ByIdClicking(driver, 'deviceServiceButtonDone')
+        ByIdClicking(driver, 'deviceConnectionButtonEdit')
 
-        element = driver.find_element_by_id('deviceServiceSelect__BV_toggle_')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
+        # UID
+        ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
+        ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
+        ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
+        ByIdSendKey(driver, 'deviceConnectionInput_uid', '1')
 
-        element = driver.find_element_by_id('deviceServiceSelect_modbus_tcp_master')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
+        # Done
+        ByIdClicking(driver, 'deviceConnectionButtonDone')
 
-        element = driver.find_element_by_id('deviceServiceButtonDone')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
-    
     def AddDeviceTag(self, driver, ret):
-        element = driver.find_element_by_id('datamapperAdd')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
+        # + click
+        ByIdClicking(driver, 'datamapperAdd')
 
         # Tag id
-        driver.find_element_by_id('datamapperId_0').send_keys(ret)
-        time.sleep(0.1)
-
+        ByIdSendKey(driver, 'datamapperId_0', ret)
         # Start address
-        driver.find_element_by_id('datamapperInfo_address').send_keys(str(40000+int(ret)))
-        time.sleep(0.1)
-
+        ByIdSendKey(driver, 'datamapperInfo_address', str(40000+int(ret)))
         # length
-        driver.find_element_by_id('datamapperInfo_length').send_keys("1")
-        time.sleep(0.1)
-        
+        ByIdSendKey(driver, 'datamapperInfo_length', '1')        
         # value type
-        element = driver.find_element_by_id('datamapperInfo_valueType__BV_toggle_')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
-
-        # select float
-        element = driver.find_element_by_id('datamapperInfo_valueType_int')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
-        
+        ByIdClicking(driver, 'datamapperInfo_valueType__BV_toggle_')
+        # select valutype
+        ByIdClicking(driver, 'datamapperInfo_valueType_int')
         # interval
-        driver.find_element_by_id('datamapperInterval').send_keys('1000')
-        time.sleep(0.1)
+        ByIdSendKey(driver, 'datamapperInterval', '1000')
 
         # click done
-        element = driver.find_element_by_id('datamapperAddDone')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
+        ByIdClicking(driver, 'datamapperAddDone')
+    
+    def AddServerDetail(self, driver):
+        # edit button
+        ByIdClicking(driver, 'deviceDetailButtonEdit')
 
+        # manufacturer
+        ret = fuzzer_method.fuzz()
+        ByIdSendKey(driver, 'deviceDetail_manufacturer', ret)
+        # Device type
+        ret = fuzzer_method.fuzz()
+        ByIdSendKey(driver, 'deviceDetail_device_type', ret)
+        # Comment
+        ret = fuzzer_method.fuzz(1000)
+        ByIdSendKey(driver, 'deviceDetail_comment', ret)
+        # Done
+        ByIdClicking(driver, 'deviceDetailButtonDone')
 
+        # Server detail input
+        ByIdClicking(driver, 'deviceServiceButtonEdit')
+        ByIdClicking(driver, 'deviceServiceSelect__BV_toggle_')
+        ByIdClicking(driver, 'deviceServiceSelect_modbus_tcp_slave')
+        ByIdClicking(driver, 'deviceServiceButtonDone')
 
+    def AddServerTag(self, driver, IDnum, dv):
+        # add the detail
+        ByIdClicking(driver, 'datamapperAdd')
+        # Id
+        ByIdSendKey(driver, 'datamapperId_0', IDnum)
+        # Type
+        ByIdClicking(driver, 'datamapperId_1__BV_toggle_')
+        ByIdClicking(driver, 'datamapperId_1_holding')
+        # Addr
+        ByIdSendKey(driver, 'datamapperId_2', IDnum)
+        # Category
+        ByIdClicking(driver, 'datamapperInfo_category__BV_toggle_')
+        # device
+        ByIdClicking(driver, 'datamapperInfo_category_device')
+        # Group
+        ByIdClicking(driver, 'datamapperInfo_group__BV_toggle_')
 
+        id_name = 'datamapperInfo_group_' + str(dv)
+        ByIdClicking(driver, id_name)
+
+        # Device
+        ByIdClicking(driver, 'datamapperInfo_device__BV_toggle_')
+
+        id_name = 'datamapperInfo_device_' + str(dv)
+        ByIdClicking(driver, id_name)
         
-
- 
+        # Tag
+        ByIdClicking(driver, 'datamapperInfo_tag__BV_toggle_')
+        ByIdClicking(driver, 'datamapperInfo_tag_0')
+        # Value Type
+        ByIdClicking(driver, 'datamapperInfo_valueType__BV_toggle_')
+        ByIdClicking(driver, 'datamapperInfo_valueType_int')
+        # Done
+        ByIdClicking(driver, 'datamapperAddDone')
