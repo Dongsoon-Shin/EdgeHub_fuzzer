@@ -2,7 +2,10 @@
 import time
 from Edgehub_fuzz_module import fuzzer_method, selenium_method
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e522df0575dc60b2666e72e9fd950150488af087
 #ret = fuzzer_method.fuzz(max_length=23)
 
 def DeviceTesting(start):

@@ -1,7 +1,10 @@
 # -*- coding:utf-8 -*-
 import time
 from Edgehub_fuzz_module import fuzzer_method, selenium_method
+<<<<<<< HEAD
 
+=======
+>>>>>>> e522df0575dc60b2666e72e9fd950150488af087
 
 #ret = fuzzer_method.fuzz(max_length=23)
 
@@ -14,7 +17,7 @@ def DeviceTesting(start):
     for num in range(13):
         start.AddDeviceTag(driver, str(num))
 
-    for j in range(2,42):
+    for j in range(2,12):
         ret2 = start.AddDeviceOfDevice(driver, str(dv))
         start.Confirm(driver)
         start.AddDeviceDetail(driver, str(dv), str(ret2), j)
