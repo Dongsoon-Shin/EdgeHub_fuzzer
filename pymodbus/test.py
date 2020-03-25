@@ -1,10 +1,8 @@
-from pymodbus.client.sync import ModbusTcpClient
+from pyModbusTCP.client import ModbusClient
+from pyModbusTCP.server import ModbusServer
+import socket
 
-client = ModbusTcpClient('127.0.0.1')
-client.write_coil(1, True)
-result = client.read_coils(1,1)
-print(result.bits[0])
-client.close()
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-
-
+s.bind(('localhost', 502))
+s.listen(5)
