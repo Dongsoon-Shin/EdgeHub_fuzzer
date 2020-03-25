@@ -1,0 +1,5774 @@
+{
+  "tags": [
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "int",
+          "length": 1,
+          "address": "40001",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "256_sInt",
+      "idFields": [
+        "256_sInt"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "uint",
+          "length": 1,
+          "address": "40001",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "256_uInt",
+      "idFields": [
+        "256_uInt"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "float",
+          "length": 1,
+          "address": "40001",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "256_Float",
+      "idFields": [
+        "256_Float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "binary",
+          "length": 1,
+          "address": "40001",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "256_bin",
+      "idFields": [
+        "256_bin"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "int",
+          "length": 1,
+          "address": "40002",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "-255_sInt",
+      "idFields": [
+        "-255_sInt"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "uint",
+          "length": 1,
+          "address": "40002",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "-255_uInt",
+      "idFields": [
+        "-255_uInt"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "float",
+          "length": 1,
+          "address": "40002",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "-255_float",
+      "idFields": [
+        "-255_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "binary",
+          "length": 1,
+          "address": "40002",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "-255_bin",
+      "idFields": [
+        "-255_bin"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "int",
+          "length": 2,
+          "address": "40003",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "255_5_sInt",
+      "idFields": [
+        "255_5_sInt"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "uint",
+          "length": 2,
+          "address": "40003",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Raw",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "255_5_uInt",
+      "idFields": [
+        "255_5_uInt"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "float",
+          "length": 2,
+          "address": "40003",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Raw",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "255_5_float",
+      "idFields": [
+        "255_5_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "binary",
+          "length": 2,
+          "address": "40003",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Raw",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "255_5_bin",
+      "idFields": [
+        "255_5_bin"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "int",
+          "length": 1,
+          "address": "40005",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0xFF_sInt",
+      "idFields": [
+        "0xFF_sInt"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "uint",
+          "length": 1,
+          "address": "40005",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0xFF_uInt",
+      "idFields": [
+        "0xFF_uInt"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "float",
+          "length": 1,
+          "address": "40005",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0xFF_float",
+      "idFields": [
+        "0xFF_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "binary",
+          "length": 1,
+          "address": "40005",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0xFF_bin",
+      "idFields": [
+        "0xFF_bin"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "int",
+          "length": 1,
+          "address": "40006",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x32_sInt",
+      "idFields": [
+        "0x32_sInt"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "uint",
+          "length": 1,
+          "address": "40006",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x32_uInt",
+      "idFields": [
+        "0x32_uInt"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "float",
+          "length": 1,
+          "address": "40006",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x32_float",
+      "idFields": [
+        "0x32_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "binary",
+          "length": 1,
+          "address": "40006",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x32_bin",
+      "idFields": [
+        "0x32_bin"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex",
+          "length": 1,
+          "address": "40006",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x32_hex",
+      "idFields": [
+        "0x32_hex"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-int",
+          "length": 1,
+          "address": "40006",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x32_str_int",
+      "idFields": [
+        "0x32_str_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-uint",
+          "length": 1,
+          "address": "40006",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x32_str_uint",
+      "idFields": [
+        "0x32_str_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-float",
+          "length": 1,
+          "address": "40006",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x32_str_float",
+      "idFields": [
+        "0x32_str_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-int",
+          "length": 1,
+          "address": "40006",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x32_hex_int",
+      "idFields": [
+        "0x32_hex_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-uint",
+          "length": 1,
+          "address": "40006",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x32_hex_uint",
+      "idFields": [
+        "0x32_hex_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-float",
+          "length": 1,
+          "address": "40006",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x32_hex_float",
+      "idFields": [
+        "0x32_hex_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-ascii",
+          "length": 1,
+          "address": "40006",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x32_str_ascii",
+      "idFields": [
+        "0x32_str_ascii"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "int",
+          "length": 1,
+          "address": "40007",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x3935_int",
+      "idFields": [
+        "0x3935_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "uint",
+          "length": 1,
+          "address": "40007",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x3935_uint",
+      "idFields": [
+        "0x3935_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "float",
+          "length": 1,
+          "address": "40007",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x3935_float",
+      "idFields": [
+        "0x3935_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "binary",
+          "length": 1,
+          "address": "40007",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x3935_bin",
+      "idFields": [
+        "0x3935_bin"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-int",
+          "length": 1,
+          "address": "40007",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x3935_str_int",
+      "idFields": [
+        "0x3935_str_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-uint",
+          "length": 1,
+          "address": "40007",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x3935_str_uint",
+      "idFields": [
+        "0x3935_str_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-float",
+          "length": 1,
+          "address": "40007",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x3935_str_float",
+      "idFields": [
+        "0x3935_str_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-int",
+          "length": 1,
+          "address": "40007",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x3935_hex_int",
+      "idFields": [
+        "0x3935_hex_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-uint",
+          "length": 1,
+          "address": "40007",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x3935_hex_uint",
+      "idFields": [
+        "0x3935_hex_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-float",
+          "length": 1,
+          "address": "40007",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x3935_hex_float",
+      "idFields": [
+        "0x3935_hex_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-ascii",
+          "length": 1,
+          "address": "40007",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x3935_str_ascii",
+      "idFields": [
+        "0x3935_str_ascii"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex",
+          "length": 1,
+          "address": "40007",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x3935_hex",
+      "idFields": [
+        "0x3935_hex"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "int",
+          "length": 1,
+          "address": "40008",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x9AB1_int",
+      "idFields": [
+        "0x9AB1_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "uint",
+          "length": 1,
+          "address": "40008",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x9AB1_uint",
+      "idFields": [
+        "0x9AB1_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "float",
+          "length": 1,
+          "address": "40008",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x9AB1_float",
+      "idFields": [
+        "0x9AB1_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "binary",
+          "length": 1,
+          "address": "40008",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x9AB1_bin",
+      "idFields": [
+        "0x9AB1_bin"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "int",
+          "length": 2,
+          "address": "40009",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x696E74_int",
+      "idFields": [
+        "0x696E74_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "uint",
+          "length": 2,
+          "address": "40009",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x696E74_uint",
+      "idFields": [
+        "0x696E74_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "float",
+          "length": 2,
+          "address": "40009",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x696E74_float",
+      "idFields": [
+        "0x696E74_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "binary",
+          "length": 2,
+          "address": "40009",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x696E74_bin",
+      "idFields": [
+        "0x696E74_bin"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "int",
+          "length": 2,
+          "address": "40011",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x21326162_int",
+      "idFields": [
+        "0x21326162_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "uint",
+          "length": 2,
+          "address": "40011",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x31326162_uint",
+      "idFields": [
+        "0x31326162_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "float",
+          "length": 2,
+          "address": "40011",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x31326162_float",
+      "idFields": [
+        "0x31326162_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "binary",
+          "length": 2,
+          "address": "40011",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x31326162_bin",
+      "idFields": [
+        "0x31326162_bin"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-int",
+          "length": 2,
+          "address": "40011",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x31326162_str_int",
+      "idFields": [
+        "0x31326162_str_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-uint",
+          "length": 2,
+          "address": "40011",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x31326162_str_uint",
+      "idFields": [
+        "0x31326162_str_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-float",
+          "length": 2,
+          "address": "40011",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x31326162_str_float",
+      "idFields": [
+        "0x31326162_str_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-int",
+          "length": 2,
+          "address": "40011",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x31326162_hex_int",
+      "idFields": [
+        "0x31326162_hex_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-uint",
+          "length": 2,
+          "address": "40011",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x31326162_hex_uint",
+      "idFields": [
+        "0x31326162_hex_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-float",
+          "length": 2,
+          "address": "40011",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x31326162_hex_float",
+      "idFields": [
+        "0x31326162_hex_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-ascii",
+          "length": 2,
+          "address": "40011",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x31326162_str_ascii",
+      "idFields": [
+        "0x31326162_str_ascii"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex",
+          "length": 2,
+          "address": "40011",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x31326162_hex",
+      "idFields": [
+        "0x31326162_hex"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "int",
+          "length": 4,
+          "address": "40013",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x39414238~int",
+      "idFields": [
+        "0x39414238~int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "uint",
+          "length": 4,
+          "address": "40013",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x39414238~uint",
+      "idFields": [
+        "0x39414238~uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "float",
+          "length": 4,
+          "address": "40013",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x39414238~float",
+      "idFields": [
+        "0x39414238~float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "binary",
+          "length": 4,
+          "address": "40013",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x39414238~bin",
+      "idFields": [
+        "0x39414238~bin"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex",
+          "length": 4,
+          "address": "40013",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x39414238~hex",
+      "idFields": [
+        "0x39414238~hex"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-int",
+          "length": 4,
+          "address": "40013",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x39414238~str_int",
+      "idFields": [
+        "0x39414238~str_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-uint",
+          "length": 4,
+          "address": "40013",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x39414238~str_uint",
+      "idFields": [
+        "0x39414238~str_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-float",
+          "length": 4,
+          "address": "40013",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x39414238~str_float",
+      "idFields": [
+        "0x39414238~str_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-int",
+          "length": 4,
+          "address": "40013",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x39414238~hex_int",
+      "idFields": [
+        "0x39414238~hex_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-uint",
+          "length": 4,
+          "address": "40013",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x39414238~hex_uint",
+      "idFields": [
+        "0x39414238~hex_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-float",
+          "length": 4,
+          "address": "40013",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x39414238~hex_float",
+      "idFields": [
+        "0x39414238~hex_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-ascii",
+          "length": 4,
+          "address": "40013",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x39414238~str_ascii",
+      "idFields": [
+        "0x39414238~str_ascii"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "int",
+          "length": 3,
+          "address": "40017",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x68656c6c_int",
+      "idFields": [
+        "0x68656c6c_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "uint",
+          "length": 3,
+          "address": "40017",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x68656c6c_uint",
+      "idFields": [
+        "0x68656c6c_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "float",
+          "length": 3,
+          "address": "40017",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x68656c6c_float",
+      "idFields": [
+        "0x68656c6c_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "binary",
+          "length": 3,
+          "address": "40017",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x68656c6c_bin",
+      "idFields": [
+        "0x68656c6c_bin"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex",
+          "length": 3,
+          "address": "40017",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x68656c6c_hex",
+      "idFields": [
+        "0x68656c6c_hex"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-int",
+          "length": 3,
+          "address": "40017",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x68656c6c_str_int",
+      "idFields": [
+        "0x68656c6c_str_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-uint",
+          "length": 3,
+          "address": "40017",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x68656c6c_str_uint",
+      "idFields": [
+        "0x68656c6c_str_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-float",
+          "length": 3,
+          "address": "40017",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x68656c6c_str_float",
+      "idFields": [
+        "0x68656c6c_str_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-int",
+          "length": 3,
+          "address": "40017",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x68656c6c_hex_int",
+      "idFields": [
+        "0x68656c6c_hex_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-uint",
+          "length": 3,
+          "address": "40017",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x68656c6c_hex_uint",
+      "idFields": [
+        "0x68656c6c_hex_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-float",
+          "length": 3,
+          "address": "40017",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x68656c6c_hex_float",
+      "idFields": [
+        "0x68656c6c_hex_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-ascii",
+          "length": 3,
+          "address": "40017",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "0x68656c6c_str_ascii",
+      "idFields": [
+        "0x68656c6c_str_ascii"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "int",
+          "length": 2,
+          "address": "40021",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9550\"_int",
+      "idFields": [
+        "\"9550\"_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "uint",
+          "length": 2,
+          "address": "40021",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9550\"_uint",
+      "idFields": [
+        "\"9550\"_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "float",
+          "length": 2,
+          "address": "40021",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9550\"_float",
+      "idFields": [
+        "\"9550\"_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "binary",
+          "length": 2,
+          "address": "40021",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9550\"_bin",
+      "idFields": [
+        "\"9550\"_bin"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex",
+          "length": 2,
+          "address": "40021",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9550\"_hex",
+      "idFields": [
+        "\"9550\"_hex"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-int",
+          "length": 2,
+          "address": "40021",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9550\"_str_int",
+      "idFields": [
+        "\"9550\"_str_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-uint",
+          "length": 2,
+          "address": "40021",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9550\"_str_uint",
+      "idFields": [
+        "\"9550\"_str_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-float",
+          "length": 2,
+          "address": "40021",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9550\"_str_float",
+      "idFields": [
+        "\"9550\"_str_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-int",
+          "length": 2,
+          "address": "40021",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9550\"_hex_int",
+      "idFields": [
+        "\"9550\"_hex_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-uint",
+          "length": 2,
+          "address": "40021",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9550\"_hex_uint",
+      "idFields": [
+        "\"9550\"_hex_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-float",
+          "length": 2,
+          "address": "40021",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9550\"_hex_float",
+      "idFields": [
+        "\"9550\"_hex_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-ascii",
+          "length": 2,
+          "address": "40021",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9550\"_str_ascii",
+      "idFields": [
+        "\"9550\"_str_ascii"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "int",
+          "length": 2,
+          "address": "40023",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9AB1\"_int",
+      "idFields": [
+        "\"9AB1\"_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "uint",
+          "length": 2,
+          "address": "40023",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9AB1\"_uint",
+      "idFields": [
+        "\"9AB1\"_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "float",
+          "length": 2,
+          "address": "40023",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9AB1\"_float",
+      "idFields": [
+        "\"9AB1\"_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "binary",
+          "length": 2,
+          "address": "40023",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9AB1\"_bin",
+      "idFields": [
+        "\"9AB1\"_bin"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex",
+          "length": 2,
+          "address": "40023",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9AB1\"_hex",
+      "idFields": [
+        "\"9AB1\"_hex"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-int",
+          "length": 2,
+          "address": "40023",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9AB1\"_str_int",
+      "idFields": [
+        "\"9AB1\"_str_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-uint",
+          "length": 2,
+          "address": "40023",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9AB1\"_str_uint",
+      "idFields": [
+        "\"9AB1\"_str_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-float",
+          "length": 2,
+          "address": "40023",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9AB1\"_str_float",
+      "idFields": [
+        "\"9AB1\"_str_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-int",
+          "length": 2,
+          "address": "40023",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9AB1\"_hex_int",
+      "idFields": [
+        "\"9AB1\"_hex_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-uint",
+          "length": 2,
+          "address": "40023",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9AB1\"_hex_uint",
+      "idFields": [
+        "\"9AB1\"_hex_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-float",
+          "length": 2,
+          "address": "40023",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9AB1\"_hex_float",
+      "idFields": [
+        "\"9AB1\"_hex_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-ascii",
+          "length": 2,
+          "address": "40023",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"9AB1\"_str_ascii",
+      "idFields": [
+        "\"9AB1\"_str_ascii"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "int",
+          "length": 2,
+          "address": "40025",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255\"_int",
+      "idFields": [
+        "\"-255\"_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "uint",
+          "length": 2,
+          "address": "40025",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255\"_uint",
+      "idFields": [
+        "\"-255\"_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "float",
+          "length": 2,
+          "address": "40025",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255\"_float",
+      "idFields": [
+        "\"-255\"_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "binary",
+          "length": 2,
+          "address": "40025",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255\"_bin",
+      "idFields": [
+        "\"-255\"_bin"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex",
+          "length": 2,
+          "address": "40025",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255\"_hex",
+      "idFields": [
+        "\"-255\"_hex"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-int",
+          "length": 2,
+          "address": "40025",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255\"_str_int",
+      "idFields": [
+        "\"-255\"_str_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-uint",
+          "length": 2,
+          "address": "40025",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255\"_str_uint",
+      "idFields": [
+        "\"-255\"_str_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-float",
+          "length": 2,
+          "address": "40025",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255\"_str_float",
+      "idFields": [
+        "\"-255\"_str_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-int",
+          "length": 2,
+          "address": "40025",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255\"_hex_int",
+      "idFields": [
+        "\"-255\"_hex_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-uint",
+          "length": 2,
+          "address": "40025",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255\"_hex_uint",
+      "idFields": [
+        "\"-255\"_hex_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-float",
+          "length": 2,
+          "address": "40025",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255\"_hex_float",
+      "idFields": [
+        "\"-255\"_hex_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-ascii",
+          "length": 2,
+          "address": "40025",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255\"_str_ascii",
+      "idFields": [
+        "\"-255\"_str_ascii"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "int",
+          "length": 3,
+          "address": "40027",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"255_55\"_int",
+      "idFields": [
+        "\"255_55\"_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "uint",
+          "length": 3,
+          "address": "40027",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"255_55\"_uint",
+      "idFields": [
+        "\"255_55\"_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "float",
+          "length": 3,
+          "address": "40027",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"255_55\"_float",
+      "idFields": [
+        "\"255_55\"_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "binary",
+          "length": 3,
+          "address": "40027",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"255_55\"_bin",
+      "idFields": [
+        "\"255_55\"_bin"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex",
+          "length": 3,
+          "address": "40027",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"255_55\"_hex",
+      "idFields": [
+        "\"255_55\"_hex"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-int",
+          "length": 3,
+          "address": "40027",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"255_55\"_str_int",
+      "idFields": [
+        "\"255_55\"_str_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-uint",
+          "length": 3,
+          "address": "40027",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"255_55\"_str_uint",
+      "idFields": [
+        "\"255_55\"_str_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-float",
+          "length": 3,
+          "address": "40027",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"255_55\"_str_float",
+      "idFields": [
+        "\"255_55\"_str_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-int",
+          "length": 3,
+          "address": "40027",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"255_55\"_hex_int",
+      "idFields": [
+        "\"255_55\"_hex_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-uint",
+          "length": 3,
+          "address": "40027",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"255_55\"_hex_uint",
+      "idFields": [
+        "\"255_55\"_hex_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-float",
+          "length": 3,
+          "address": "40027",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"255_55\"_hex_float",
+      "idFields": [
+        "\"255_55\"_hex_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-ascii",
+          "length": 3,
+          "address": "40027",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"255_55\"_str_ascii",
+      "idFields": [
+        "\"255_55\"_str_ascii"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "int",
+          "length": 3,
+          "address": "40030",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255_5\"_int",
+      "idFields": [
+        "\"-255_5\"_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "uint",
+          "length": 3,
+          "address": "40030",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255_5\"_uint",
+      "idFields": [
+        "\"-255_5\"_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "float",
+          "length": 3,
+          "address": "40030",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255_5\"_float",
+      "idFields": [
+        "\"-255_5\"_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "binary",
+          "length": 3,
+          "address": "40030",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255_5\"_bin",
+      "idFields": [
+        "\"-255_5\"_bin"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex",
+          "length": 3,
+          "address": "40030",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255_5\"_hex",
+      "idFields": [
+        "\"-255_5\"_hex"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-int",
+          "length": 3,
+          "address": "40030",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255_5\"_str_int",
+      "idFields": [
+        "\"-255_5\"_str_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-uint",
+          "length": 3,
+          "address": "40030",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255_5\"_str_uint",
+      "idFields": [
+        "\"-255_5\"_str_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-float",
+          "length": 3,
+          "address": "40030",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255_5\"_str_float",
+      "idFields": [
+        "\"-255_5\"_str_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-int",
+          "length": 3,
+          "address": "40030",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255_5\"_hex_int",
+      "idFields": [
+        "\"-255_5\"_hex_int"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-uint",
+          "length": 3,
+          "address": "40030",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255_5\"_hex_uint",
+      "idFields": [
+        "\"-255_5\"_hex_uint"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "hex-float",
+          "length": 3,
+          "address": "40030",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255_5\"_hex_float",
+      "idFields": [
+        "\"-255_5\"_hex_float"
+      ]
+    },
+    {
+      "serial": false,
+      "properties": {
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "_group": "MLCC#1",
+        "_device": "ingress",
+        "_condition": {
+          "valueType": "string-ascii",
+          "length": 3,
+          "address": "40030",
+          "_load_condition": "",
+          "_interval": 10000,
+          "_history": "disable",
+          "_data_type": "Value",
+          "_comment": "",
+          "_category": ""
+        },
+        "_client": 0,
+        "_category": "device"
+      },
+      "name": "\"-255_5\"_str_ascii",
+      "idFields": [
+        "\"-255_5\"_str_ascii"
+      ]
+    }
+  ],
+  "protocols": {
+    "opcua server": {
+      "text": "OPC UA",
+      "connectionInfo": [
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Port",
+          "key": "port",
+          "default": 53530
+        }
+      ],
+      "category": "server",
+      "builtIn": true
+    },
+    "opcua client": {
+      "text": "OPC UA",
+      "tagInfo": [
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Object ID",
+          "key": "id"
+        }
+      ],
+      "connectionInfo": [
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Address",
+          "key": "address"
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Port",
+          "key": "port"
+        }
+      ],
+      "category": "device",
+      "builtIn": true
+    },
+    "modbus tcp slave": {
+      "text": "Modbus TCP",
+      "tagInfo": [
+        {
+          "valueType": "text",
+          "type": "categories",
+          "name": "Category",
+          "key": "category"
+        },
+        {
+          "valueType": "text",
+          "type": "groups",
+          "name": "Group",
+          "key": "group"
+        },
+        {
+          "valueType": "text",
+          "type": "devices",
+          "name": "Device",
+          "key": "device"
+        },
+        {
+          "valueType": "text",
+          "type": "tags",
+          "name": "Tag",
+          "key": "tag"
+        }
+      ],
+      "tagIdFields": [
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "ID",
+          "key": "id",
+          "default": 1
+        },
+        {
+          "valueType": "text",
+          "type": "select",
+          "options": [
+            {
+              "text": "Coil (0x)",
+              "key": "coil"
+            },
+            {
+              "text": "Discrete Input (1x)",
+              "key": "discrete"
+            },
+            {
+              "text": "Input Register (3x)",
+              "key": "input"
+            },
+            {
+              "text": "Holding Register (4x)",
+              "key": "holding"
+            }
+          ],
+          "name": "Type",
+          "key": "type",
+          "default": "register"
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Address",
+          "key": "address",
+          "default": 0
+        }
+      ],
+      "connectionInfo": [
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Port",
+          "key": "port",
+          "default": 502
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "UIDs",
+          "key": "uids",
+          "default": "1"
+        }
+      ],
+      "category": "server",
+      "builtIn": true
+    },
+    "modbus tcp master": {
+      "text": "Modbus TCP",
+      "tagInfo": [
+        {
+          "valueType": "text",
+          "type": "input",
+          "namingRule": "A",
+          "name": "Start address",
+          "key": "address"
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Length",
+          "key": "length"
+        }
+      ],
+      "connectionInfo": [
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Address",
+          "key": "address",
+          "default": "127.0.0.1"
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Port",
+          "key": "port",
+          "default": 502
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Unique ID",
+          "key": "uid",
+          "default": 255
+        }
+      ],
+      "category": "device",
+      "builtIn": true
+    },
+    "modbus rtu master": {
+      "text": "Modbus RTU",
+      "tagInfo": [
+        {
+          "valueType": "text",
+          "type": "input",
+          "namingRule": "A",
+          "name": "Start address",
+          "key": "address"
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Length",
+          "key": "length"
+        }
+      ],
+      "serial": true,
+      "connectionInfo": [
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Port",
+          "key": "port",
+          "default": ""
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Unique ID",
+          "key": "uid",
+          "default": 255
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Baudrate",
+          "key": "speed",
+          "default": 115200
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Data Bits",
+          "key": "data_bits",
+          "default": 8
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Parity",
+          "key": "parity",
+          "default": "none"
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Stop Bits",
+          "key": "stop_bits",
+          "default": 1
+        }
+      ],
+      "category": "device",
+      "builtIn": true
+    },
+    "melsec serial": {
+      "text": "MELSEC SERIAL",
+      "tagInfo": [
+        {
+          "valueType": "text",
+          "type": "input",
+          "namingRule": "A",
+          "name": "Start address",
+          "key": "address"
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Length",
+          "key": "length"
+        }
+      ],
+      "serial": true,
+      "connectionInfo": [
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Port",
+          "key": "port",
+          "default": ""
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Baudrate",
+          "key": "speed",
+          "default": 9600
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Data Bits",
+          "key": "data_bits",
+          "default": 8
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Parity",
+          "key": "parity",
+          "default": "none"
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Stop Bits",
+          "key": "stop_bits",
+          "default": 1
+        },
+        {
+          "type": "select",
+          "options": [
+            {
+              "text": "1F",
+              "key": "1F"
+            },
+            {
+              "text": "2F",
+              "key": "2F"
+            },
+            {
+              "text": "4F",
+              "key": "4F"
+            }
+          ],
+          "name": "Format",
+          "key": "format",
+          "default": "4F"
+        },
+        {
+          "type": "select",
+          "options": [
+            {
+              "text": "2C",
+              "key": "2C"
+            },
+            {
+              "text": "3C",
+              "key": "3C"
+            },
+            {
+              "text": "4C",
+              "key": "4C"
+            }
+          ],
+          "name": "Frame",
+          "key": "frame",
+          "default": "4C"
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Station Number",
+          "key": "num_station",
+          "default": "00"
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Self Station Number",
+          "key": "num_station_self",
+          "default": "FF"
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Network number",
+          "key": "num_network",
+          "default": "00",
+          "condition": {
+            "value": [
+              "3C",
+              "4C"
+            ],
+            "field": "frame",
+            "action": "includes"
+          }
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "PLC number",
+          "key": "num_plc",
+          "default": "FF",
+          "condition": {
+            "value": [
+              "3C",
+              "4C"
+            ],
+            "field": "frame",
+            "action": "includes"
+          }
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Request Destination Module Station Number",
+          "key": "request_dest_module_num_station",
+          "default": "00",
+          "condition": {
+            "value": [
+              "4C"
+            ],
+            "field": "frame",
+            "action": "includes"
+          }
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Request Destination I/O Number",
+          "key": "request_dest_num_IO",
+          "default": "03FF",
+          "condition": {
+            "value": [
+              "3C",
+              "4C"
+            ],
+            "field": "frame",
+            "action": "includes"
+          }
+        }
+      ],
+      "category": "device",
+      "builtIn": true
+    },
+    "melsec ethernet": {
+      "text": "MELSEC ETHERNET",
+      "tagInfo": [
+        {
+          "valueType": "text",
+          "type": "input",
+          "namingRule": "A",
+          "name": "Start address",
+          "key": "address"
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Length",
+          "key": "length"
+        }
+      ],
+      "connectionInfo": [
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Address",
+          "key": "address",
+          "default": "127.0.0.1"
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Port",
+          "key": "port",
+          "default": 5002
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Network Number",
+          "key": "network_number",
+          "default": "00"
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Station Number",
+          "key": "station_number",
+          "default": "00"
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "PLC Number",
+          "key": "plc_number",
+          "default": "FF"
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "IO Number",
+          "key": "io_number",
+          "default": "03FF"
+        },
+        {
+          "type": "select",
+          "options": [
+            {
+              "text": "Binary",
+              "key": "binary"
+            },
+            {
+              "text": "ASCII",
+              "key": "ASCII"
+            }
+          ],
+          "name": "Communication Type",
+          "key": "communication_type",
+          "default": "binary"
+        }
+      ],
+      "category": "device",
+      "builtIn": true
+    },
+    "mariadb custom": {
+      "text": "MariaDB Custom",
+      "tagInfo": [
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Table",
+          "key": "table"
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Colunm",
+          "key": "column"
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Condition",
+          "key": "condition"
+        }
+      ],
+      "connectionInfo": [
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Address",
+          "key": "address",
+          "default": "127.0.0.1"
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Port",
+          "key": "port",
+          "default": 3306
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "namingRule": "id",
+          "name": "Database",
+          "key": "database",
+          "default": "EdgeHub"
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "namingRule": "id",
+          "name": "Username",
+          "key": "username",
+          "default": "root"
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "namingRule": "A",
+          "name": "Password",
+          "key": "password",
+          "default": ""
+        },
+        {
+          "valueType": "text",
+          "type": "select",
+          "options": [
+            {
+              "text": "EdgeHub",
+              "key": "edgehub"
+            },
+            {
+              "text": "Custom",
+              "key": "custom"
+            }
+          ],
+          "name": "Type",
+          "key": "type",
+          "default": ""
+        }
+      ],
+      "category": "database",
+      "builtIn": true
+    },
+    "mariadb": {
+      "text": "MariaDB EdgeHub",
+      "tagInfo": [
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Table",
+          "key": "table"
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Colunm",
+          "key": "column"
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Condition",
+          "key": "condition"
+        }
+      ],
+      "connectionInfo": [
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Address",
+          "key": "address",
+          "default": "127.0.0.1"
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Port",
+          "key": "port",
+          "default": 3306
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Database",
+          "key": "database",
+          "default": "EdgeHub"
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Username",
+          "key": "username",
+          "default": "root"
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Password",
+          "key": "password",
+          "default": ""
+        },
+        {
+          "valueType": "text",
+          "type": "select",
+          "options": [
+            {
+              "text": "EdgeHub",
+              "key": "edgehub"
+            },
+            {
+              "text": "Custom",
+              "key": "custom"
+            }
+          ],
+          "name": "Type",
+          "key": "type",
+          "default": ""
+        }
+      ],
+      "category": "database",
+      "builtIn": true
+    },
+    "http server": {
+      "text": "HTTP",
+      "connectionInfo": [
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Port",
+          "key": "port",
+          "default": 2290
+        }
+      ],
+      "category": "server",
+      "builtIn": true
+    },
+    "fenet": {
+      "text": "FENET",
+      "tagInfo": [
+        {
+          "valueType": "text",
+          "type": "input",
+          "namingRule": "A",
+          "name": "Start address",
+          "key": "address"
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Length",
+          "key": "length"
+        }
+      ],
+      "connectionInfo": [
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Address",
+          "key": "address",
+          "default": "127.0.0.1"
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Port",
+          "key": "port",
+          "default": 2004
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Slot",
+          "key": "slot",
+          "default": 0
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Base",
+          "key": "base",
+          "default": 0
+        },
+        {
+          "type": "select",
+          "options": [
+            {
+              "text": "LSIS-XGT",
+              "key": "LSIS-XGT"
+            },
+            {
+              "text": "LSIS-GLOFA",
+              "key": "LSIS-GLOFA"
+            }
+          ],
+          "name": "Company ID",
+          "key": "company_id",
+          "default": "LSIS-XGT"
+        },
+        {
+          "type": "select",
+          "options": [
+            {
+              "text": "XGK",
+              "key": "XGK"
+            },
+            {
+              "text": "XGI",
+              "key": "XGI"
+            },
+            {
+              "text": "XGR",
+              "key": "XGR"
+            }
+          ],
+          "name": "CPU Info",
+          "key": "cpu_info",
+          "default": "XGI"
+        }
+      ],
+      "category": "device",
+      "builtIn": true
+    },
+    "cnet": {
+      "text": "CNET",
+      "tagInfo": [
+        {
+          "valueType": "text",
+          "type": "input",
+          "namingRule": "A",
+          "name": "Start address",
+          "key": "address"
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Length",
+          "key": "length"
+        }
+      ],
+      "serial": true,
+      "connectionInfo": [
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Port",
+          "key": "port",
+          "default": ""
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Unique ID",
+          "key": "uid",
+          "default": 255
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Baudrate",
+          "key": "speed",
+          "default": 115200
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Data Bits",
+          "key": "data_bits",
+          "default": 8
+        },
+        {
+          "valueType": "text",
+          "type": "input",
+          "name": "Parity",
+          "key": "parity",
+          "default": "none"
+        },
+        {
+          "valueType": "number",
+          "type": "input",
+          "name": "Stop Bits",
+          "key": "stop_bits",
+          "default": 1
+        }
+      ],
+      "category": "device",
+      "builtIn": true
+    }
+  },
+  "groups": [
+    {
+      "properties": {
+        "comment": ""
+      },
+      "name": "_"
+    },
+    {
+      "properties": {
+        "comment": ""
+      },
+      "name": "MLCC#1"
+    }
+  ],
+  "devices": [
+    {
+      "properties": {
+        "category": "virtual"
+      },
+      "name": "Virtual"
+    },
+    {
+      "properties": {
+        "communication": {
+          "service": "mariadb",
+          "serial": false,
+          "data": {
+            "username": "root",
+            "type": "edgehub",
+            "port": 3306,
+            "password": "Admin",
+            "database": "edgeHub",
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "category": "database"
+      },
+      "name": "edgehub"
+    },
+    {
+      "properties": {
+        "group": "MLCC#1",
+        "communication": {
+          "service": "modbus tcp master",
+          "serial": false,
+          "data": {
+            "uid": 55,
+            "port": 502,
+            "address": "127.0.0.1",
+            "_created": "ui"
+          }
+        },
+        "category": "device"
+      },
+      "name": "ingress"
+    }
+  ]
+}

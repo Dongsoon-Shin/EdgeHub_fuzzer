@@ -1,14 +1,6 @@
 # -*- coding:utf-8 -*-
 import time
-<<<<<<< HEAD
-from Edgehub_fuzz_module import fuzzer_method, selenium_method
-<<<<<<< HEAD
-
-=======
->>>>>>> e522df0575dc60b2666e72e9fd950150488af087
-=======
 import fuzzer_method, selenium_method
->>>>>>> 5b01135597cbc93fa97bea041dd0a59352674235
 
 #ret = fuzzer_method.fuzz(max_length=23)
 
