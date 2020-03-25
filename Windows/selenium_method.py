@@ -92,13 +92,10 @@ class AddToContents(object):
 
         return ret2
 
-    def AddDeviceDetail(self, driver, gret, ret):
-        name = 'lineDevice_device_'+str(gret)+'_'+str(ret)
-        print(name)
-        # element = driver.find_element_by_id(name)
-        element = driver.find_element(By.XPATH, '//*[@id="lineDevice_device_' + str(gret) + '_' +str(ret) + '"]')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
+    def AddDeviceDetail(self, driver, gret, ret, UID):
+        name = '//*[@id="lineDevice_device_' + str(gret) + '_' +str(ret) + '"]'
+        # print(name)
+        ByXpathClicking(driver, name)
 
         # Edit
         ByIdClicking(driver, 'deviceDetailButtonEdit')
@@ -127,7 +124,7 @@ class AddToContents(object):
         ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
         ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
         ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
-        ByIdSendKey(driver, 'deviceConnectionInput_uid', '1')
+        ByIdSendKey(driver, 'deviceConnectionInput_uid', UID)
 
         # Done
         ByIdClicking(driver, 'deviceConnectionButtonDone')
@@ -139,7 +136,7 @@ class AddToContents(object):
         # Tag id
         ByIdSendKey(driver, 'datamapperId_0', ret)
         # Start address
-        ByIdSendKey(driver, 'datamapperInfo_address', str(40000+int(ret)))
+        ByIdSendKey(driver, 'datamapperInfo_address', str(40001+int(ret)))
         # length
         ByIdSendKey(driver, 'datamapperInfo_length', '1')        
         # value type

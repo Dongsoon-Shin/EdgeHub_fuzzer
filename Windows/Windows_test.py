@@ -6,22 +6,21 @@ import fuzzer_method
 #ret = fuzzer_method.fuzz(max_length=23)
 
 def DeviceTesting(start):
-    for i in range(200):
-        dv = fuzzer_method.fuzz(max_length=19)
-        start.AddDevice(driver)
-        start.TypeString(driver, str(dv))
-        start.Confirm(driver)
-    # start.AddDeviceDetail(driver, str(dv), str(dv))
-    # for num in range(9):
-    #     start.AddDeviceTag(driver, str(num))
+    dv = fuzzer_method.fuzz(max_length=19)
+    start.AddDevice(driver)
+    start.TypeString(driver, str(dv))
+    start.Confirm(driver)
+    start.AddDeviceDetail(driver, str(dv), str(dv), 1)
+    for num in range(13):
+        start.AddDeviceTag(driver, str(num))
 
-    # for j in range(40):
-    #     ret2 = start.AddDeviceOfDevice(driver, str(dv))
-    #     start.Confirm(driver)
-    #     start.AddDeviceDetail(driver, str(dv), str(ret2))
-    #     time.sleep(0.1)
-    #     for i in range(13):
-    #         start.AddDeviceTag(driver, str(i))
+    for j in range(2,42):
+        ret2 = start.AddDeviceOfDevice(driver, str(dv))
+        start.Confirm(driver)
+        start.AddDeviceDetail(driver, str(dv), str(ret2), j)
+        time.sleep(0.1)
+        for i in range(13):
+            start.AddDeviceTag(driver, str(i))
     
     return dv
 
@@ -34,7 +33,7 @@ def ServerTesting(start, dv):
 
 if __name__ == "__main__":
 
-    # Init Chrome Driver and Selenium
+    # """ Init Chrome Driver and Selenium """
     chrome = selenium_method.InitDriver()
     driver = chrome.SetChrome()
     driver.get('localhost:1290')
