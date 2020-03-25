@@ -5,3 +5,4 @@ interactor/
 .fuzzer
 !user/.keep
 .DS_Store
+*.log
