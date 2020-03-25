@@ -1,5 +1,4 @@
-import time
-from Edgehub_fuzz_module import fuzzer_method
+import time, fuzzer_method
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
