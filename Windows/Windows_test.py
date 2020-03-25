@@ -19,24 +19,24 @@ def DeviceTesting(start):
     start.TypeString(driver, str(dv))
     start.Confirm(driver)
     start.AddDeviceDetail(driver, str(dv), str(dv), 1)
-    for num in range(10):
+    for num in range(11):
         start.AddDeviceTag(driver, str(num))
 
-    for j in range(2,12):
+    for j in range(2,7):
         ret2 = start.AddDeviceOfDevice(driver, str(dv))
         start.Confirm(driver)
         start.AddDeviceDetail(driver, str(dv), str(ret2), j)
         time.sleep(0.1)
-        for i in range(10):
+        for i in range(5):
             start.AddDeviceTag(driver, str(i))
     
     return dv
 
 def ServerTesting(start, dv):
-    for i in range(20):
+    for i in range(3):
         start.AddServer(driver)
         start.AddServerDetail(driver)
-        for j in range(1,21):
+        for j in range(1,3):
             start.AddServerTag(driver, j, dv)
 
 if __name__ == "__main__":
