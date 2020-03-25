@@ -1,20 +1,25 @@
 # -*- coding:utf-8 -*-
 import time
+<<<<<<< HEAD
 from Edgehub_fuzz_module import fuzzer_method, selenium_method
 <<<<<<< HEAD
 
 =======
 >>>>>>> e522df0575dc60b2666e72e9fd950150488af087
+=======
+import fuzzer_method, selenium_method
+>>>>>>> 5b01135597cbc93fa97bea041dd0a59352674235
 
 #ret = fuzzer_method.fuzz(max_length=23)
 
 def DeviceTesting(start):
     dv = fuzzer_method.fuzz(max_length=19)
     start.AddDevice(driver)
+    time.sleep(0.1)
     start.TypeString(driver, str(dv))
     start.Confirm(driver)
     start.AddDeviceDetail(driver, str(dv), str(dv), 1)
-    for num in range(13):
+    for num in range(10):
         start.AddDeviceTag(driver, str(num))
 
     for j in range(2,12):
@@ -22,7 +27,7 @@ def DeviceTesting(start):
         start.Confirm(driver)
         start.AddDeviceDetail(driver, str(dv), str(ret2), j)
         time.sleep(0.1)
-        for i in range(13):
+        for i in range(10):
             start.AddDeviceTag(driver, str(i))
     
     return dv
@@ -43,7 +48,6 @@ if __name__ == "__main__":
 
     # Create object that selenium running module
     start = selenium_method.AddToContents()
-    start.ConfigureClear(driver)
 
     # running time measure
     start_time = time.time()
