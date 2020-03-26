@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 import time
-import fuzzer_method, selenium_method
+from Edgehub_testing_module import fuzzer_method, selenium_method, crolling
+import pandas as pd
 
 #ret = fuzzer_method.fuzz(max_length=23)
 
@@ -29,8 +30,8 @@ def ServerTesting(start, dv):
     for i in range(3):
         start.AddServer(driver)
         start.AddServerDetail(driver)
-        for j in range(1,3):
-            start.AddServerTag(driver, j, dv)
+        # for j in range(1,3):
+        #     start.AddServerTag(driver, j, "MLCC#1", "ingress",tag, valType)
 
 if __name__ == "__main__":
 
@@ -46,8 +47,15 @@ if __name__ == "__main__":
     start_time = time.time()
     print("Start time: ", start_time)
 
-    start.ConfigureClear(driver)
-    dv = DeviceTesting(start)
+    # start.ConfigureClear(driver)
+    
+    for i in range(200):
+        data = crolling.DataScarp()
+        try:
+            start.AddServerTag(driver, j, "MLCC#1", "ingress",data[tag][i], data[valueType][i])
+        except:
+            exit()
+    # dv = DeviceTesting(start)
     # ServerTesting(start, dv)
     start.Commit(driver)
 

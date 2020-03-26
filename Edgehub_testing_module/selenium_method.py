@@ -171,7 +171,7 @@ class AddToContents(object):
         ByIdClicking(driver, 'deviceServiceSelect_modbus_tcp_slave')
         ByIdClicking(driver, 'deviceServiceButtonDone')
 
-    def AddServerTag(self, driver, IDnum, dv):
+    def AddServerTag(self, driver, IDnum, Group_name, Device_name, tag_name, valueType):
         # add the detail
         ByIdClicking(driver, 'datamapperAdd')
         # Id
@@ -183,25 +183,24 @@ class AddToContents(object):
         ByIdSendKey(driver, 'datamapperId_2', IDnum)
         # Category
         ByIdClicking(driver, 'datamapperInfo_category__BV_toggle_')
-        # device
         ByIdClicking(driver, 'datamapperInfo_category_device')
         # Group
         ByIdClicking(driver, 'datamapperInfo_group__BV_toggle_')
 
-        id_name = 'datamapperInfo_group_' + str(dv)
+        id_name = 'datamapperInfo_group_' + str(Group_name)
         ByIdClicking(driver, id_name)
 
         # Device
         ByIdClicking(driver, 'datamapperInfo_device__BV_toggle_')
 
-        id_name = 'datamapperInfo_device_' + str(dv)
+        id_name = 'datamapperInfo_device_' + str(Device_name)
         ByIdClicking(driver, id_name)
         
         # Tag
         ByIdClicking(driver, 'datamapperInfo_tag__BV_toggle_')
-        ByIdClicking(driver, 'datamapperInfo_tag_0')
+        ByIdClicking(driver, f'datamapperInfo_tag_{tag_name}')
         # Value Type
         ByIdClicking(driver, 'datamapperInfo_valueType__BV_toggle_')
-        ByIdClicking(driver, 'datamapperInfo_valueType_int')
+        ByIdClicking(driver, f'datamapperInfo_valueType_{valueType}')
         # Done
         ByIdClicking(driver, 'datamapperAddDone')
