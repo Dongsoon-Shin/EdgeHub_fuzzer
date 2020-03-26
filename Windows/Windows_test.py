@@ -5,22 +5,23 @@ import fuzzer_method, selenium_method
 #ret = fuzzer_method.fuzz(max_length=23)
 
 def DeviceTesting(start):
-    dv = fuzzer_method.fuzz(max_length=19)
-    start.AddDevice(driver)
-    time.sleep(0.1)
-    start.TypeString(driver, str(dv))
-    start.Confirm(driver)
-    start.AddDeviceDetail(driver, str(dv), str(dv), 1)
-    for num in range(11):
-        start.AddDeviceTag(driver, str(num))
-
-    for j in range(2,7):
-        ret2 = start.AddDeviceOfDevice(driver, str(dv))
-        start.Confirm(driver)
-        start.AddDeviceDetail(driver, str(dv), str(ret2), j)
+    for xnum in range(100):
+        dv = fuzzer_method.fuzz(max_length=19)
+        start.AddDevice(driver)
         time.sleep(0.1)
-        for i in range(5):
-            start.AddDeviceTag(driver, str(i))
+        start.TypeString(driver, str(dv))
+        start.Confirm(driver)
+        start.AddDeviceDetail(driver, str(dv), str(dv), 1)
+    # for num in range(11):
+    #     start.AddDeviceTag(driver, str(num))
+
+    # for j in range(2,7):
+    #     ret2 = start.AddDeviceOfDevice(driver, str(dv))
+    #     start.Confirm(driver)
+    #     start.AddDeviceDetail(driver, str(dv), str(ret2), j)
+    #     time.sleep(0.1)
+    #     for i in range(5):
+    #         start.AddDeviceTag(driver, str(i))
     
     return dv
 
