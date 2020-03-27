@@ -1,4 +1,5 @@
-import time, fuzzer_method
+import time
+from Edgehub_testing_module import fuzzer_method
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -58,7 +59,7 @@ class AddToContents(object):
         ByIdClicking(driver, 'newEntityModal_Type_dropdown__BV_toggle_')
         ByIdClicking(driver, 'newEntityModal_Type_dropdown_option_Server')
 
-        ret = fuzzer_method.fuzz(23)
+        ret = fuzzer_method.fuzz(20)
         ByIdSendKey(driver, 'newEntityModal_deviceName_input', ret)
         ByIdClicking(driver, 'newEntityModal_confirm_button')
 
@@ -198,7 +199,45 @@ class AddToContents(object):
         
         # Tag
         ByIdClicking(driver, 'datamapperInfo_tag__BV_toggle_')
-        ByIdClicking(driver, f'datamapperInfo_tag_{tag_name}')
+        ByIdClicking(driver, f'datamapperInfo_tag_{str(tag_name)}')
+    
+        # Value Type
+        ByIdClicking(driver, 'datamapperInfo_valueType__BV_toggle_')
+        ByIdClicking(driver, f'datamapperInfo_valueType_{valueType}')
+        # Done
+        ByIdClicking(driver, 'datamapperAddDone')
+
+    def AddServerTag100(self, driver, IDnum, Group_name, Device_name, tag_num, valueType):
+        # add the detail
+        ByIdClicking(driver, 'datamapperAdd')
+        # Id
+        ByIdSendKey(driver, 'datamapperId_0', IDnum)
+        # Type
+        ByIdClicking(driver, 'datamapperId_1__BV_toggle_')
+        ByIdClicking(driver, 'datamapperId_1_holding')
+        # Addr
+        ByIdSendKey(driver, 'datamapperId_2', IDnum)
+        # Category
+        ByIdClicking(driver, 'datamapperInfo_category__BV_toggle_')
+        ByIdClicking(driver, 'datamapperInfo_category_device')
+        # Group
+        ByIdClicking(driver, 'datamapperInfo_group__BV_toggle_')
+
+        id_name = 'datamapperInfo_group_' + str(Group_name)
+        ByIdClicking(driver, id_name)
+
+        # Device
+        ByIdClicking(driver, 'datamapperInfo_device__BV_toggle_')
+
+        id_name = 'datamapperInfo_device_' + str(Device_name)
+        ByIdClicking(driver, id_name)
+        
+        # Tag
+        ByIdClicking(driver, 'datamapperInfo_tag__BV_toggle_')
+        ByXpathClicking(driver, f'/html/body/div[1]/div[2]/div/div[2]/div/body/div/main/div/div[5]/div[2]/div/form/table/tbody/tr[3]/td[8]/div/div/ul/li[{tag_num}]/a')
+        # //*[@id="datamapperInfo_tag_"9550"_uint"]
+        # ByIdClicking(driver, f'datamapperInfo_tag_{str(tag_name)}')
+    
         # Value Type
         ByIdClicking(driver, 'datamapperInfo_valueType__BV_toggle_')
         ByIdClicking(driver, f'datamapperInfo_valueType_{valueType}')

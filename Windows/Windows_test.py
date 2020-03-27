@@ -48,16 +48,19 @@ if __name__ == "__main__":
     print("Start time: ", start_time)
 
     # start.ConfigureClear(driver)
-    
-    for i in range(200):
-        data = crolling.DataScarp()
-        try:
-            start.AddServerTag(driver, j, "MLCC#1", "ingress",data[tag][i], data[valueType][i])
-        except:
-            exit()
+    data = crolling.DataScarp()
+    # print(data)
+    start.AddServer(driver)
+    start.AddServerDetail(driver)
+    for i in range(len(data)-1):
+        if len(data) <= 50:
+            start.AddServerTag(driver, i+1, "MLCC#1", "ingress",data['tag'][i], data['valueType'][i])
+        else:
+            start.AddServerTag100(driver, i+1, "MLCC#1", "ingress", i+1 , data['valueType'][i])
+
     # dv = DeviceTesting(start)
     # ServerTesting(start, dv)
-    start.Commit(driver)
+    # start.Commit(driver)
 
     print("consuming time:", time.time() - start_time)
 
