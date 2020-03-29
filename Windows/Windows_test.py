@@ -47,16 +47,27 @@ if __name__ == "__main__":
     start_time = time.time()
     print("Start time: ", start_time)
 
+    start.AddDevice(driver)
+    time.sleep(0.1)
+    start.TypeString(driver, "Test")
+    start.Confirm(driver)
+
+    df = pd.read_excel('C:\\Users\\dsshin\\Desktop\\test.xlsx', index=False)
+    del df['Unnamed: 0']
+    print(df)
+
+    start.AddDeviceTag(self, driver, df['tag'], addr, length, valType, interval):
+    
     # start.ConfigureClear(driver)
-    data = crolling.DataScarp()
+    # data = crolling.DataScarp()
     # print(data)
-    start.AddServer(driver)
-    start.AddServerDetail(driver)
-    for i in range(len(data)-1):
-        if len(data) <= 50:
-            start.AddServerTag(driver, i+1, "MLCC#1", "ingress",data['tag'][i], data['valueType'][i])
-        else:
-            start.AddServerTag100(driver, i+1, "MLCC#1", "ingress", i+1 , data['valueType'][i])
+    # start.AddServer(driver)
+    # start.AddServerDetail(driver)
+    # for i in range(len(data)-1):
+    #     if len(data) <= 50:
+    #         start.AddServerTag(driver, i+1, "MLCC#1", "ingress",data['tag'][i], data['valueType'][i])
+    #     else:
+    #         start.AddServerTag100(driver, i+1, "MLCC#1", "ingress", i+1 , data['valueType'][i])
 
     # dv = DeviceTesting(start)
     # ServerTesting(start, dv)
