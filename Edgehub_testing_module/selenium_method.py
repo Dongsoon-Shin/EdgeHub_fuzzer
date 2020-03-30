@@ -130,22 +130,22 @@ class AddToContents(object):
         # Done
         ByIdClicking(driver, 'deviceConnectionButtonDone')
 
-    def AddDeviceTag(self, driver, ret):
+    def AddDeviceTag(self, driver, tag, addr, length, valueType, interval):
         # + click
         ByIdClicking(driver, 'datamapperAdd')
 
         # Tag id
-        ByIdSendKey(driver, 'datamapperId_0', ret)
+        ByIdSendKey(driver, 'datamapperId_0', tag)
         # Start address
-        ByIdSendKey(driver, 'datamapperInfo_address', str(40001+int(ret)))
+        ByIdSendKey(driver, 'datamapperInfo_address', str(addr))
         # length
-        ByIdSendKey(driver, 'datamapperInfo_length', '1')        
+        ByIdSendKey(driver, 'datamapperInfo_length', length)        
         # value type
         ByIdClicking(driver, 'datamapperInfo_valueType__BV_toggle_')
         # select valutype
-        ByIdClicking(driver, 'datamapperInfo_valueType_int')
+        ByIdClicking(driver, f'datamapperInfo_valueType_{valueType}')
         # interval
-        ByIdSendKey(driver, 'datamapperInterval', '1000')
+        ByIdSendKey(driver, 'datamapperInterval', interval)
 
         # click done
         ByIdClicking(driver, 'datamapperAddDone')

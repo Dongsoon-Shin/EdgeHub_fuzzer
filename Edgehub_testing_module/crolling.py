@@ -39,7 +39,7 @@ def other(num, driver):
     try:
         for i in range(3,23):
             name = f'//*[@id="navExpandMain"]/div[5]/div[2]/div/form/table/tbody/tr[{i}]/td[{num}]/div/div/p'
-            txt = driver.find_element(By.XPATH, name). text
+            txt = driver.find_element(By.XPATH, name).text
             # print(txt)
             out.append(txt)
     except:
@@ -62,6 +62,7 @@ def DataScarp():
         'interval':interval
     }
     # print(data)
+    # selenium_method.ByClassClicking(chrome, 'page-link-sign page-link-sign-ml')
     selenium_method.ByXpathClicking(chrome, '//*[@id="navExpandMain"]/div[5]/div[2]/div/div/div[1]/nav/ul/li[11]')
     time.sleep(0.1)
 
@@ -78,6 +79,7 @@ def DataScarp():
                 'valueType':valueType,
                 'interval':interval
             }
+            # selenium_method.ByClassClicking(chrome, 'page-link-sign page-link-sign-ml')
             selenium_method.ByXpathClicking(chrome, '//*[@id="navExpandMain"]/div[5]/div[2]/div/div/div[1]/nav/ul/li[11]')
             time.sleep(0.1)
             df2 = pd.DataFrame(data)
