@@ -23,22 +23,22 @@ if __name__ == "__main__":
     start_time = time.time()
     print("Start time: ", start_time)
 
-    # start.ConfigureClear(driver)
-    # start.AddDevice(driver)
-    # time.sleep(0.1)
-    # start.TypeString(driver, "Test")
-    # start.Confirm(driver)
-    # start.AddDeviceDetail(driver, "Test", "Test", 55)
-    # for i in range(len(df)):
-    #     start.AddDeviceTag(driver, df['tag'][i], df['addr'][i], df['length'][i], df['valueType'][i], df['interval'][i])
+    start.ConfigureClear(driver)
+    start.AddDevice(driver)
+    start.TypeString(driver, "Test_1000ms")
+    start.Confirm(driver)
+
+    start.AddDeviceDetail(driver, "Test_1000ms", "Test_1000ms", 55)
+    for i in range(len(df)-1):
+        start.AddDeviceTag(driver, df['tag'][i], df['addr'][i], df['length'][i], df['valueType'][i], str(1000))
     
     start.AddServer(driver)
     start.AddServerDetail(driver)
-    for i in range(len(df)):
+    for i in range(len(df)-1):
         if len(df) <= 50:
-            start.AddServerTag(driver, i+1, "Test", "Test",df['tag'][i], df['valueType'][i])
+            start.AddServerTag(driver, i+1, "Test_1000ms", "Test_1000ms",df['tag'][i], df['valueType'][i])
         else:
-            start.AddServerTag100(driver, i+1, "Test", "Test", i+1 , df['valueType'][i])
+            start.AddServerTag100(driver, i+1, "Test_1000ms", "Test_1000ms", i+1 , df['valueType'][i])
 
     # start.Commit(driver)
 

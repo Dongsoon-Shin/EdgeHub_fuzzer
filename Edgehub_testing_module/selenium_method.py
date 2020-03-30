@@ -139,13 +139,13 @@ class AddToContents(object):
         # Start address
         ByIdSendKey(driver, 'datamapperInfo_address', str(addr))
         # length
-        ByIdSendKey(driver, 'datamapperInfo_length', length)        
+        ByIdSendKey(driver, 'datamapperInfo_length', str(length))
         # value type
         ByIdClicking(driver, 'datamapperInfo_valueType__BV_toggle_')
         # select valutype
         ByIdClicking(driver, f'datamapperInfo_valueType_{valueType}')
         # interval
-        ByIdSendKey(driver, 'datamapperInterval', interval)
+        ByIdSendKey(driver, 'datamapperInterval', str(interval))
 
         # click done
         ByIdClicking(driver, 'datamapperAddDone')
