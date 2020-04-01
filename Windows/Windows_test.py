@@ -23,14 +23,14 @@ if __name__ == "__main__":
     start_time = time.time()
     print("Start time: ", start_time)
 
-    start.ConfigureClear(driver)
-    start.AddDevice(driver)
-    start.TypeString(driver, "Test_1000ms")
-    start.Confirm(driver)
+    # start.ConfigureClear(driver)
+    # start.AddDevice(driver)
+    # start.TypeString(driver, "Test_1000ms")
+    # start.Confirm(driver)
 
-    start.AddDeviceDetail(driver, "Test_1000ms", "Test_1000ms", 55)
-    for i in range(len(df)-1):
-        start.AddDeviceTag(driver, df['tag'][i], df['addr'][i], df['length'][i], df['valueType'][i], str(1000))
+    # start.AddDeviceDetail(driver, "Test_1000ms", "Test_1000ms", 55)
+    # for i in range(len(df)-1):
+    #     start.AddDeviceTag(driver, df['tag'][i], df['addr'][i], df['length'][i], df['valueType'][i], str(1000))
     
     start.AddServer(driver)
     start.AddServerDetail(driver)

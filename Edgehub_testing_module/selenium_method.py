@@ -101,12 +101,12 @@ class AddToContents(object):
         # Edit
         ByIdClicking(driver, 'deviceDetailButtonEdit')
 
-        # manufacturer
-        ret = fuzzer_method.fuzz()
-        ByIdSendKey(driver, 'deviceDetail_manufacturer', ret)
-        # Device type
-        ret = fuzzer_method.fuzz()
-        ByIdSendKey(driver, 'deviceDetail_device_type', ret)
+        # # manufacturer
+        # ret = fuzzer_method.fuzz()
+        # ByIdSendKey(driver, 'deviceDetail_manufacturer', ret)
+        # # Device type
+        # ret = fuzzer_method.fuzz()
+        # ByIdSendKey(driver, 'deviceDetail_device_type', ret)
         # Comment
         ret = fuzzer_method.fuzz(1000)
         ByIdSendKey(driver, 'deviceDetail_comment', ret)
@@ -156,10 +156,10 @@ class AddToContents(object):
 
         # manufacturer
         ret = fuzzer_method.fuzz()
-        ByIdSendKey(driver, 'deviceDetail_manufacturer', ret)
-        # Device type
-        ret = fuzzer_method.fuzz()
-        ByIdSendKey(driver, 'deviceDetail_device_type', ret)
+        # ByIdSendKey(driver, 'deviceDetail_manufacturer', ret)
+        # # Device type
+        # ret = fuzzer_method.fuzz()
+        # ByIdSendKey(driver, 'deviceDetail_device_type', ret)
         # Comment
         ret = fuzzer_method.fuzz(1000)
         ByIdSendKey(driver, 'deviceDetail_comment', ret)
