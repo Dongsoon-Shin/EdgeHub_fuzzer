@@ -26,6 +26,7 @@ Then, we need auto-gen framework selenium, which usually used in web browser tes
 Next, to use an Edgehub testing module, you should copy the "EdgeHub_testing_module" folder to the "lib" folder under the ".venv" folder.
 
     (.venv)$ cp -R Edgehub_testing_modul .venv/lib/site-packages/
+    (.venv)$ cp ServerTags.xlsx Windows/
 
 Now, we can run python script. Execute the python script matched your OS.
 
