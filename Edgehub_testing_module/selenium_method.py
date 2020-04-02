@@ -81,17 +81,14 @@ class AddToContents(object):
         ByIdClicking(driver, 'newEntityModal_confirm_button')
 
     def AddDeviceOfDevice(self, driver, dv):
-        element = driver.find_element_by_class_name('nav-left-search-add')
-        driver.execute_script("arguments[0].click();", element)
-        time.sleep(0.1)
+        ByClassClicking(driver,'nav-left-search-add')
 
         ByIdClicking(driver, 'newEntityModal_Type_dropdown__BV_toggle_')
         ByIdClicking(driver, 'newEntityModal_Type_dropdown_option_Device')
         ByIdClicking(driver, 'newEntityModal_Group_dropdown__BV_toggle_')
 
-        id_name = 'newEntityModal_Group_dropdown_option_'+str(dv)
         # print(id_name)
-        ByIdClicking(driver, id_name)
+        ByIdClicking(driver, id_name = f'newEntityModal_Group_dropdown_option_{str(dv)}')
 
         ret2 = fuzzer_method.fuzz(5)
         ByIdSendKey(driver, 'newEntityModal_deviceName_input', ret2)
@@ -101,9 +98,8 @@ class AddToContents(object):
         return ret2
 
     def AddDeviceDetail(self, driver, gret, ret, UID):
-        name = '//*[@id="lineDevice_device_' + str(gret) + '_' +str(ret) + '"]'
         # print(name)
-        ByXpathClicking(driver, name)
+        ByXpathClicking(driver,f'//*[@id="lineDevice_device_{gret}_{ret}"]')
 
         # Edit
         ByIdClicking(driver, 'deviceDetailButtonEdit')
@@ -194,15 +190,11 @@ class AddToContents(object):
         ByIdClicking(driver, 'datamapperInfo_category_device')
         # Group
         ByIdClicking(driver, 'datamapperInfo_group__BV_toggle_')
-
-        id_name = 'datamapperInfo_group_' + str(Group_name)
-        ByIdClicking(driver, id_name)
+        ByIdClicking(driver, f'datamapperInfo_group_{str(Group_name)}')
 
         # Device
         ByIdClicking(driver, 'datamapperInfo_device__BV_toggle_')
-
-        id_name = 'datamapperInfo_device_' + str(Device_name)
-        ByIdClicking(driver, id_name)
+        ByIdClicking(driver, f'datamapperInfo_device_{str(Device_name)}')
         
         # Tag
         ByIdClicking(driver, 'datamapperInfo_tag__BV_toggle_')
@@ -229,15 +221,11 @@ class AddToContents(object):
         ByIdClicking(driver, 'datamapperInfo_category_device')
         # Group
         ByIdClicking(driver, 'datamapperInfo_group__BV_toggle_')
-
-        id_name = 'datamapperInfo_group_' + str(Group_name)
-        ByIdClicking(driver, id_name)
+        ByIdClicking(driver, f'datamapperInfo_group_{str(Group_name)}')
 
         # Device
         ByIdClicking(driver, 'datamapperInfo_device__BV_toggle_')
-
-        id_name = 'datamapperInfo_device_' + str(Device_name)
-        ByIdClicking(driver, id_name)
+        ByIdClicking(driver, f'datamapperInfo_device_{str(Device_name)}')
         
         # Tag
         ByIdClicking(driver, 'datamapperInfo_tag__BV_toggle_')
