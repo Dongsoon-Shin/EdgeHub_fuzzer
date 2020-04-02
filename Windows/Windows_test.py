@@ -38,6 +38,7 @@ if __name__ == "__main__":
     
     start.AddServer(driver)
     start.AddServerDetail(driver)
+    
     for i in range(len(df)-1):
         if len(df) <= 50:
             start.AddServerTag(driver, i+1, "Test_1000ms", "Test_1000ms",df['tag'][i], df['valueType'][i])

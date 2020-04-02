@@ -1,4 +1,4 @@
-import time
+import time, platform, os
 from Edgehub_testing_module import fuzzer_method
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -25,8 +25,16 @@ def ByXpathClicking(driver, id_name):
 
 class InitDriver(object):
     def SetChrome(self):
-        driver = webdriver.Chrome('./chromedriver')
-        return driver
+        print(f"[!] System OS detected: {platform.system()}")
+        if platform.system() != "Windows":
+            driver = webdriver.Chrome('./chromedriver')
+            return driver
+        else:
+            file_name = os.listdir("Windows")
+            path = os.path.join("Windows", "chromedriver.exe")
+            # print(file_name, path)
+            driver = webdriver.Chrome(path)
+            return driver
 
 class AddToContents(object):
     def Commit(self, driver):
@@ -108,7 +116,7 @@ class AddToContents(object):
         # ret = fuzzer_method.fuzz()
         # ByIdSendKey(driver, 'deviceDetail_device_type', ret)
         # Comment
-        ret = fuzzer_method.fuzz(1000)
+        ret = fuzzer_method.fuzz(100)
         ByIdSendKey(driver, 'deviceDetail_comment', ret)
 
         # Done
@@ -161,7 +169,7 @@ class AddToContents(object):
         # ret = fuzzer_method.fuzz()
         # ByIdSendKey(driver, 'deviceDetail_device_type', ret)
         # Comment
-        ret = fuzzer_method.fuzz(1000)
+        ret = fuzzer_method.fuzz(100)
         ByIdSendKey(driver, 'deviceDetail_comment', ret)
         # Done
         ByIdClicking(driver, 'deviceDetailButtonDone')
