@@ -7,7 +7,7 @@ import pandas as pd
 
 if __name__ == "__main__":
 
-    df = pd.read_excel('C:\\Users\\dsshin\\Desktop\\ServerTags.xlsx', index=False)
+    df = pd.read_excel('ServerTags.xlsx', index=False)
     del df['Unnamed: 0']
     print(len(df))
     print(df)
@@ -29,7 +29,7 @@ if __name__ == "__main__":
     start.AddDevice(driver)
     start.TypeString(driver, "Test_1000ms")
     start.Confirm(driver)
-    
+
     start.Commit(driver)
 
     start.AddDeviceDetail(driver, "Test_1000ms", "Test_1000ms", 55)
