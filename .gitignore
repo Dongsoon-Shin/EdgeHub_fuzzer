@@ -6,3 +6,4 @@ interactor/
 !user/.keep
 .DS_Store
 *.log
+macOS/
