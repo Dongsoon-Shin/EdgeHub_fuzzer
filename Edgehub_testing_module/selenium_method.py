@@ -30,7 +30,6 @@ class InitDriver(object):
             driver = webdriver.Chrome('./chromedriver')
             return driver
         else:
-            file_name = os.listdir("Windows")
             path = os.path.join("Windows", "chromedriver.exe")
             # print(file_name, path)
             driver = webdriver.Chrome(path)
