@@ -42,7 +42,7 @@ Please, download ChromeDriver 80 version in current releases for fit to your OS.
 I wrote the code that predefined function and pre-necessary module using selenium in selenium_module.py. If you want to use other web sites, you should modify some code in selenium_module.py. Due to the compatibility of the web site, I cannot write the general-purpose code now (In the future, I will make a general-purpose code).
 
     # simple running
-    python Windows_test.py
+    (.venv)$ python Windows_test.py
 
 During the script is started, we have to turn off the power-save function in system configuration (such as, power-save mode, auto turn-off monitor, etc.). This is important that turn-off the power-save mode and auto-turn-off the monitor (include screen savor). 
 
