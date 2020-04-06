@@ -99,7 +99,7 @@ class AddToContents(object):
 
     def AddDeviceDetail(self, driver, gret, ret, UID):
         # print(name)
-        ByXpathClicking(driver,f'//*[@id="lineDevice_device_{gret}_{ret}"]')
+        ByXpathClicking(driver, f'//*[@id="lineDevice_device_{str(gret)}_{str(ret)}"]')
 
         # Edit
         ByIdClicking(driver, 'deviceDetailButtonEdit')
