@@ -24,28 +24,38 @@ if __name__ == "__main__":
     # running time measure
     start_time = time.time()
     print("Start time: ", start_time)
-
+    
+    # first time create device group and device
     start.ConfigureClear(driver)
     start.AddDevice(driver)
     start.TypeString(driver, "Test_1000ms")
     start.Confirm(driver)
 
+    # Commit
     start.Commit(driver)
 
-    start.AddDeviceDetail(driver, "Test_1000ms", "Test_1000ms", 55)
+    # Device name, Device group name
+    start.AddDeviceDetail(driver, "Test_1000ms", "Test_1000ms", 1)
     for i in range(len(df)-1):
+        # tag, addr, length, valuetype, interval
         start.AddDeviceTag(driver, df['tag'][i], df['addr'][i], df['length'][i], df['valueType'][i], str(1000))
     
+    # server add
     start.AddServer(driver)
-    start.AddServerDetail(driver)
+
+    # Uids, port
+    start.AddServerDetail(driver, str(1), str(503))
     
+    # server tag add
     for i in range(len(df)-1):
         if len(df) <= 50:
-            start.AddServerTag(driver, i+1, "Test_1000ms", "Test_1000ms",df['tag'][i], df['valueType'][i])
+            # driver, IDnum, addr, Group_name, Device_name, tag_name, valueType
+            start.AddServerTag(driver, 1, i+1, "Test_1000ms", "Test_1000ms", df['tag'][i] , df['valueType'][i])
         else:
-            start.AddServerTag100(driver, i+1, "Test_1000ms", "Test_1000ms", i+1 , df['valueType'][i])
+            # driver, IDnum, addr, Group_name, Device_name, tag_name, valueType
+            start.AddServerTag100(driver, 1, i+1, "Test_1000ms", "Test_1000ms", i+1 , df['valueType'][i])
 
-    start.Commit(driver)
+    # start.Commit(driver)
 
     print("consuming time:", time.time() - start_time)
 
