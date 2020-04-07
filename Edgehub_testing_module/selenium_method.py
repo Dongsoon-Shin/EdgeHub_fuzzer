@@ -97,7 +97,7 @@ class AddToContents(object):
 
         return ret2
 
-    def AddDeviceDetail(self, driver, gret, ret, UID):
+    def AddDeviceDetail(self, driver, gret, ret, UID, address, port, CC, TimeOut):
         # print(name)
         ByXpathClicking(driver, f'//*[@id="lineDevice_device_{str(gret)}_{str(ret)}"]')
 
@@ -124,11 +124,34 @@ class AddToContents(object):
         ByIdClicking(driver, 'deviceServiceButtonDone')
         ByIdClicking(driver, 'deviceConnectionButtonEdit')
 
+        # Addr
+        for i in range(20):
+            ByIdSendKey(driver, 'deviceConnectionInput_address', Keys.BACKSPACE)
+        ByIdSendKey(driver, 'deviceConnectionInput_address', address)
+
+        # port
+        ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
+        ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
+        ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
+        ByIdSendKey(driver, 'deviceConnectionInput_port', port)
+
+        # Connection Count
+        ByIdSendKey(driver, 'deviceConnectionInput_connections', Keys.BACKSPACE)
+        ByIdSendKey(driver, 'deviceConnectionInput_connections', Keys.BACKSPACE)
+        ByIdSendKey(driver, 'deviceConnectionInput_connections', Keys.BACKSPACE)
+        ByIdSendKey(driver, 'deviceConnectionInput_connections', CC)
+
         # UID
         ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
         ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
         ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
         ByIdSendKey(driver, 'deviceConnectionInput_uid', UID)
+
+        # Timeout
+        ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
+        ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
+        ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
+        ByIdSendKey(driver, 'deviceConnectionInput_timeout', TimeOut)
 
         # Done
         ByIdClicking(driver, 'deviceConnectionButtonDone')
@@ -158,7 +181,7 @@ class AddToContents(object):
         ByIdClicking(driver, 'deviceDetailButtonEdit')
 
         # manufacturer
-        ret = fuzzer_method.fuzz()
+        # ret = fuzzer_method.fuzz()
         # ByIdSendKey(driver, 'deviceDetail_manufacturer', ret)
         # # Device type
         # ret = fuzzer_method.fuzz()
@@ -180,7 +203,7 @@ class AddToContents(object):
         ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
         ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
         ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
-        ByIdSendKey(driver, 'deviceConnectionInput_uids', Port)
+        ByIdSendKey(driver, 'deviceConnectionInput_port', Port)
 
         ByIdSendKey(driver, 'deviceConnectionInput_uids', Keys.BACKSPACE)
         ByIdSendKey(driver, 'deviceConnectionInput_uids', Keys.BACKSPACE)
