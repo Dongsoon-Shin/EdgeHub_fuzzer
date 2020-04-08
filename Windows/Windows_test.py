@@ -131,6 +131,8 @@ def FenetTest():
 def OPC_UA_test():
     return True
 
+def https_test():
+    return True
 
 if __name__ == "__main__":
     ModbusTCP_test(100)
