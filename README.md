@@ -5,7 +5,7 @@ This is EdgeHub fuzzer for EdgeHub UI testing. I'll demonstrate how to execute t
 # Install
 
 ### Virtualenv
-
+Turn on a PowerShell prompt or CMD. Then, run the installation steps below.
 First, to avoid the crush other modules, I recommend that make "virtualenv".
 
     $ pip install virtualenv
@@ -21,7 +21,7 @@ Now, we activated the virtualenv. If you succeed to activate the virtualenv, you
 
 Then, we need auto-gen framework selenium, which usually used in web browser testing. Selenium is extenstion module in python. Therefore, If we use a some automatic framework, we have to install selenium.
 
-    (.venv)$ pip install selenium pandas
+    (.venv)$ pip install selenium pandas psutil
 
 Next, to use an Edgehub testing module, you should copy the "EdgeHub_testing_module" folder to the "lib" folder under the ".venv" folder.
 

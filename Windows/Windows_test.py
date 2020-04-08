@@ -20,9 +20,13 @@ def once(start, driver, iter, interval, df, ret):
 
     # Commit
     # start.Commit(driver)
-
+    Device_UID = 55
+    Device_addr = '127.0.0.1'
+    Device_port = 502
+    Device_count = 1
+    Device_interval = 1000
     # Device name, Device group name, UID, addr, port, connection count, interval
-    start.AddDeviceDetail(driver, ret, ret, 55, '127.0.0.1', 502, 1, 1000)
+    start.AddDeviceDetail(driver, ret, ret, Device_UID, Device_addr, Device_port, Device_count, Device_interval)
 
     for i in range(iter):
         # tag, addr, length, valuetype, interval
@@ -32,18 +36,18 @@ def once(start, driver, iter, interval, df, ret):
     start.AddServer(driver, ret)
 
     # Server Uids, port
-    UIDs = 55
-    port = 503
-    start.AddServerDetail(driver, str(UIDs), str(port))
+    server_UIDs = 55
+    server_port = 503
+    start.AddServerDetail(driver, str(server_UIDs), str(server_port))
     
     # server tag add
     for i in range(iter):
         if len(df) <= 50:
             # driver, IDnum, addr, Group_name, Device_name, tag_name, valueType
-            start.AddServerTag(driver, UIDs, i+1, ret , ret, df['tag'][i] , df['valueType'][i])
+            start.AddServerTag(driver, server_UIDs, i+1, ret , ret, df['tag'][i] , df['valueType'][i])
         else:
             # driver, IDnum, addr, Group_name, Device_name, tag_name, valueType
-            start.AddServerTag100(driver, UIDs, i+1, ret, ret, i+1 , df['valueType'][i])
+            start.AddServerTag100(driver, server_UIDs, i+1, ret, ret, i+1 , df['valueType'][i])
 
     # start.Commit(driver)
 
