@@ -8,7 +8,12 @@ import psutil
 import pandas as pd
 
 
-def once(start, driver, iter, interval, df, ret):
+def once(start, driver, iter, interval, df, ret, 
+    Device_UID = 55,
+    Device_addr = '127.0.0.1',
+    Device_port = 502,
+    Device_count = 1,
+    Device_TimeOut = 1000):
     
     # running time measure
     # start_time = time.time()
@@ -20,13 +25,9 @@ def once(start, driver, iter, interval, df, ret):
 
     # Commit
     # start.Commit(driver)
-    Device_UID = 55
-    Device_addr = '127.0.0.1'
-    Device_port = 502
-    Device_count = 1
-    Device_interval = 1000
+    
     # Device name, Device group name, UID, addr, port, connection count, interval
-    start.AddDeviceDetail(driver, ret, ret, Device_UID, Device_addr, Device_port, Device_count, Device_interval)
+    start.AddDeviceDetail(driver, ret, ret, Device_UID, Device_addr, Device_port, Device_count, Device_TimeOut)
 
     for i in range(iter):
         # tag, addr, length, valuetype, interval
@@ -82,12 +83,12 @@ def init():
     driver = chrome.SetChrome()
     return chrome, driver
 
-if __name__ == "__main__":
+def ModbusTCP_test(dt):
     # croll a excel data which involving a server tags
     df = pd.read_excel('ServerTags.xlsx', index=False)
     del df['Unnamed: 0']
-    print(len(df))
-    print(df)
+    # print(len(df))
+    # print(df)
 
     ret = fuzzer_method.fuzz(max_length=20)
 
@@ -101,18 +102,38 @@ if __name__ == "__main__":
 
     # Create object that selenium running module
     start = selenium_method.AddToContents()
-
-    once(start, driver, len(df)-1, 1000, df, ret)
+    Device_UID = 55
+    Device_addr = '127.0.0.1'
+    Device_port = 502
+    Device_count = 1
+    Device_TImeOut = dt
+    # start, driver, iter, interval, df, ret, Device_UID = 55, Device_addr = '127.0.0.1', Device_port = 502, Device_count = 1, Device_TimeOut = 1000
+    once(start, driver, len(df)-1, 1000, df, ret, Device_UID, Device_addr, Device_port, Device_count, Device_TImeOut)
 
     start.Commit(driver)
     time.sleep(5)
     driver.get(f'{localhost}' + f'{check_name}')
     count = 0
-    Results = pd.DataFrame({"result":checkData(start, driver, localhost, check_name)})
+    Results = pd.DataFrame({"ModbusTCP_result":checkData(start, driver, localhost, check_name)})
     # print(Results['result'])
     for i in range(len(Results)):
-        if Results['result'][i] == 'NoData':
+        if Results['ModbusTCP_result'][i] == 'NoData':
             pass
         else:
             count += 1
-    print(count)
+    print(f'ModbusTCP data result: {count}')
+
+    return Results
+
+def FenetTest():
+    return True
+
+def OPC_UA_test():
+    return True
+
+
+if __name__ == "__main__":
+    ModbusTCP_test(100)
+    FenetTest()
+    OPC_UA_test()
+    
