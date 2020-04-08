@@ -55,3 +55,5 @@ During the script is started, we have to turn off the power-save function in sys
 # Result
 
 If the testing is end, you can see the log in console. Please, let me know your log.
+
+https://docs.google.com/spreadsheets/d/1dbFqdpxl1xUGDTtmFXoFPqNqsNYwNlD4zrx221CqwJg/edit?usp=sharing
