@@ -102,7 +102,6 @@ if __name__ == "__main__":
     # Create object that selenium running module
     start = selenium_method.AddToContents()
 
-    
     once(start, driver, len(df)-1, 1000, df, ret)
 
     start.Commit(driver)
