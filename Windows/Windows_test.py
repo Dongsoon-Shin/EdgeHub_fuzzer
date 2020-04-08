@@ -70,7 +70,7 @@ def checkData(start, driver, localhost, check_name):
                     data.append(txt)
             except:
                 print("end")
-                driver.quit()
+                # driver.quit()
                 return data
 
         selenium_method.ByXpathClicking(driver, '//*[@id="navExpandMain"]/div[5]/div[2]/div/div/div[1]/nav/ul/li[11]')
