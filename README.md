@@ -50,6 +50,8 @@ I wrote the code that predefined function and pre-necessary module using seleniu
 
 During the script is started, we have to turn off the power-save function in system configuration (such as, power-save mode, auto turn-off monitor, etc.). This is important that turn-off the power-save mode and auto-turn-off the monitor (include screen savor). 
 
+![](test.gif)
+
 # Result
 
 If the testing is end, you can see the log in console. Please, let me know your log.
