@@ -1,11 +1,14 @@
 # [EdgeHub] UI fuzzer
 
-This is EdgeHub fuzzer for EdgeHub UI testing. I'll demonstrate how to execute the script file. If end the testing, let me know your result @Dongsoon Shin. 
+This is EdgeHub fuzzer for EdgeHub UI testing. I'll demonstrate how to execute the script file. If end the testing, let me know your result @Dongsoon Shin.
+
+# This version only support Windows.
 
 # Install
 
 ### Virtualenv
 Turn on a PowerShell prompt or CMD. Then, run the installation steps below.
+
 First, to avoid the crush other modules, I recommend that make "virtualenv".
 
     $ pip install virtualenv
@@ -15,7 +18,7 @@ If you execute the above code, you cannot see the .venv folder if you use a Linu
 
     $ source .venv/bin/activate
 
-Now, we activated the virtualenv. If you succeed to activate the virtualenv, you can see the below shell shape. IIf you fail to activate the virtualenv, you cannot see the (.venv).
+Now, we activated the virtualenv. If you succeed to activate the virtualenv, you can see the below shell shape. If you fail to activate the virtualenv, you cannot see the (.venv).
 
     (.venv)$
 

@@ -106,7 +106,8 @@ if __name__ == "__main__":
     once(start, driver, len(df)-1, 1000, df, ret)
 
     start.Commit(driver)
-
+    
+    driver.get(f'{localhost}' + f'{check_name}')
     count = 0
     Results = pd.DataFrame({"result":checkData(start, driver, localhost, check_name)})
     # print(Results['result'])
