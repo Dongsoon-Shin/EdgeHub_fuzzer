@@ -46,7 +46,7 @@ class AddToContents(object):
         ByIdClicking(driver, 'top-nav-sub-edit-dropdown-clear-configuration')
         ByIdClicking(driver, 'commitModalCommit')
 
-    def AddDevice(self, driver):
+    def AddDevice(self, driver, ret):
         # add device type
         ByClassClicking(driver, 'nav-left-search-add')
 
@@ -59,25 +59,22 @@ class AddToContents(object):
         #create new group
         ByXpathClicking(driver,'//*[@id="newEntityModal_Group_dropdown"]/ul/li[1]/a')
         # ByIdClicking(driver, 'newEntityModal_Group_dropdown_option_create_new_group')
+
+        #input groupname and device name
+        ByIdSendKey(driver, 'newEntityModal_groupName_input', ret)
+        ByIdSendKey(driver, 'newEntityModal_deviceName_input', ret)
+
+         # click the Confirm button
+        ByIdClicking(driver, 'newEntityModal_confirm_button')
     
-    def AddServer(self, driver):
+    def AddServer(self, driver, ret):
         ByClassClicking(driver, 'nav-left-search-add')
 
         ByIdClicking(driver, 'newEntityModal_Type_dropdown__BV_toggle_')
         ByIdClicking(driver, 'newEntityModal_Type_dropdown_option_Server')
 
-        ret = fuzzer_method.fuzz(20)
+        # ret = fuzzer_method.fuzz(20)
         ByIdSendKey(driver, 'newEntityModal_deviceName_input', ret)
-        ByIdClicking(driver, 'newEntityModal_confirm_button')
-
-    def TypeString(self, driver, ret):
-        #input groupname and device name
-        ByIdSendKey(driver, 'newEntityModal_groupName_input', ret)
-        ByIdSendKey(driver, 'newEntityModal_deviceName_input', ret)
-
-
-    def Confirm(self, driver):
-        # click the Confirm button
         ByIdClicking(driver, 'newEntityModal_confirm_button')
 
     def AddDeviceOfDevice(self, driver, dv):
