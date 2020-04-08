@@ -7,7 +7,7 @@ This is EdgeHub fuzzer for EdgeHub UI testing. I'll demonstrate how to execute t
 # Install
 
 ### Virtualenv
-Turn on a PowerShell prompt or CMD. Then, run the installation steps below.
+Turn on a PowerShell prompt. Then, run the installation steps below.
 
 First, to avoid the crush other modules, I recommend that make "virtualenv".
 
