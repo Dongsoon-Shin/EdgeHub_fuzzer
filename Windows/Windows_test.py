@@ -16,9 +16,7 @@ def once(start, driver, iter, interval, df, ret):
     
     # first time create device group and device
     start.ConfigureClear(driver)
-    start.AddDevice(driver)
-    start.TypeString(driver, ret)
-    start.Confirm(driver)
+    start.AddDevice(driver, ret)
 
     # Commit
     # start.Commit(driver)
@@ -31,7 +29,7 @@ def once(start, driver, iter, interval, df, ret):
         start.AddDeviceTag(driver, df['tag'][i], df['addr'][i], df['length'][i], df['valueType'][i], str(interval))
     
     # server add
-    start.AddServer(driver)
+    start.AddServer(driver, ret)
 
     # Server Uids, port
     UIDs = 55
@@ -53,7 +51,9 @@ def once(start, driver, iter, interval, df, ret):
 
     #driver.quit()
 
-def checkData(start, driver):
+def checkData(start, driver, localhost, check_name):
+    driver.get(f'{localhost}' + f'{check_name}')
+    # Wait for yield the Web page
     time.sleep(3)
     data = []
     for i in range(8):
@@ -73,27 +73,39 @@ def checkData(start, driver):
         time.sleep(0.1)
     return data
 
-if __name__ == "__main__":
+def init():
+    chrome = selenium_method.InitDriver()
+    driver = chrome.SetChrome()
+    return chrome, driver
 
-    # df = pd.read_excel('ServerTags.xlsx', index=False)
-    # del df['Unnamed: 0']
-    # print(len(df))
-    # print(df)
+if __name__ == "__main__":
+    # croll a excel data which involving a server tags
+    df = pd.read_excel('ServerTags.xlsx', index=False)
+    del df['Unnamed: 0']
+    print(len(df))
+    print(df)
 
     ret = fuzzer_method.fuzz(max_length=20)
 
     # """ Init Chrome Driver and Selenium """
-    chrome = selenium_method.InitDriver()
-    driver = chrome.SetChrome()
-    driver.get('http://localhost:1290/device?category=device&name=xaglruailxl&line=xaglruailxl&index=0')
+    chrome, driver = init()
+    
+    localhost = f'http://localhost:1290'
+    check_name = f'/device?category=device&name={ret}&{ret}&line={ret}&index=0'
+    
+    driver.get(f'{localhost}')
 
     # Create object that selenium running module
     start = selenium_method.AddToContents()
 
+    
+    once(start, driver, len(df)-1, 1000, df, ret)
+
+    start.Commit(driver)
+
     count = 0
-    # once(start, driver, len(df)-1, 1000, df, ret)
-    Results = pd.DataFrame({"result":checkData(start, driver)})
-    print(Results['result'])
+    Results = pd.DataFrame({"result":checkData(start, driver, localhost, check_name)})
+    # print(Results['result'])
     for i in range(len(Results)):
         if Results['result'][i] == 'NoData':
             pass
