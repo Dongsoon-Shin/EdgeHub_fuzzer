@@ -1,11 +1,5 @@
 # -*- coding:utf-8 -*-
-import time
 from Edgehub_testing_module import fuzzer_method, selenium_method, crolling, Device_module
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-import psutil
-import pandas as pd
 
 if __name__ == "__main__":
     # Device interval, Time out

@@ -171,10 +171,10 @@ def ModbusRTU_test():
     # get page index of Device tags
     driver.get(f'{localhost}' + f'{check_name}')
     count = 0
-    Results = pd.DataFrame({"ModbusTCP_result":checkData(start, driver, localhost, check_name)})
+    Results = pd.DataFrame({"ModbusRTU_result":checkData(start, driver, localhost, check_name)})
     # print(Results['result'])
     for i in range(len(Results)):
-        if Results['ModbusTCP_result'][i] == 'NoData':
+        if Results['ModbusRTU_result'][i] == 'NoData':
             pass
         else:
             count += 1
@@ -221,10 +221,10 @@ def Cnet_test():
     # get page index of Device tags
     driver.get(f'{localhost}' + f'{check_name}')
     count = 0
-    Results = pd.DataFrame({"ModbusTCP_result":checkData(start, driver, localhost, check_name)})
+    Results = pd.DataFrame({"Cnet_result":checkData(start, driver, localhost, check_name)})
     # print(Results['result'])
     for i in range(len(Results)):
-        if Results['ModbusTCP_result'][i] == 'NoData':
+        if Results['Cnet_result'][i] == 'NoData':
             pass
         else:
             count += 1
@@ -271,10 +271,10 @@ def Fenet_test():
     # get page index of Device tags
     driver.get(f'{localhost}' + f'{check_name}')
     count = 0
-    Results = pd.DataFrame({"ModbusTCP_result":checkData(start, driver, localhost, check_name)})
+    Results = pd.DataFrame({"Fenet_result":checkData(start, driver, localhost, check_name)})
     # print(Results['result'])
     for i in range(len(Results)):
-        if Results['ModbusTCP_result'][i] == 'NoData':
+        if Results['Fenet_result'][i] == 'NoData':
             pass
         else:
             count += 1
@@ -321,10 +321,10 @@ def MELSEC_SERIAL_test():
     # get page index of Device tags
     driver.get(f'{localhost}' + f'{check_name}')
     count = 0
-    Results = pd.DataFrame({"ModbusTCP_result":checkData(start, driver, localhost, check_name)})
+    Results = pd.DataFrame({"MELSEC_SERIAL_result":checkData(start, driver, localhost, check_name)})
     # print(Results['result'])
     for i in range(len(Results)):
-        if Results['ModbusTCP_result'][i] == 'NoData':
+        if Results['MELSEC_SERIAL_result'][i] == 'NoData':
             pass
         else:
             count += 1
@@ -371,10 +371,10 @@ def MELSEC_ETH_test():
     # get page index of Device tags
     driver.get(f'{localhost}' + f'{check_name}')
     count = 0
-    Results = pd.DataFrame({"ModbusTCP_result":checkData(start, driver, localhost, check_name)})
+    Results = pd.DataFrame({"MELSEC_ETH_result":checkData(start, driver, localhost, check_name)})
     # print(Results['result'])
     for i in range(len(Results)):
-        if Results['ModbusTCP_result'][i] == 'NoData':
+        if Results['MELSEC_ETH_result'][i] == 'NoData':
             pass
         else:
             count += 1
