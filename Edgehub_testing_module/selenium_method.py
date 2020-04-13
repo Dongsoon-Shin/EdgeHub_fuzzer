@@ -85,16 +85,16 @@ class AddToContents(object):
         ByIdClicking(driver, 'newEntityModal_Group_dropdown__BV_toggle_')
 
         # print(id_name)
-        ByIdClicking(driver, id_name = f'newEntityModal_Group_dropdown_option_{str(dv)}')
+        ByIdClicking(driver, f'newEntityModal_Group_dropdown_option_{str(dv)}')
 
         ret2 = fuzzer_method.fuzz(5)
         ByIdSendKey(driver, 'newEntityModal_deviceName_input', ret2)
 
-        print("ret2 ",ret2)
+        # print("ret2 ",ret2)
 
         return ret2
 
-    def AddDeviceDetail(self, driver, gret, ret, UID, address, port, CC, TimeOut):
+    def AddDeviceDetail_TCP(self, driver, gret, ret, UID, address, port, CC, TimeOut):
         # print(name)
         ByXpathClicking(driver, f'//*[@id="lineDevice_device_{str(gret)}_{str(ret)}"]')
 
@@ -122,7 +122,7 @@ class AddToContents(object):
         ByIdClicking(driver, 'deviceConnectionButtonEdit')
 
         # Addr
-        for i in range(20):
+        for i in range(15):
             ByIdSendKey(driver, 'deviceConnectionInput_address', Keys.BACKSPACE)
         ByIdSendKey(driver, 'deviceConnectionInput_address', address)
 
@@ -152,6 +152,298 @@ class AddToContents(object):
 
         # Done
         ByIdClicking(driver, 'deviceConnectionButtonDone')
+
+    def AddDeviceDetail_RTU(self, driver, gret, ret):
+        # print(name)
+        ByXpathClicking(driver, f'//*[@id="lineDevice_device_{str(gret)}_{str(ret)}"]')
+
+        # Edit
+        ByIdClicking(driver, 'deviceDetailButtonEdit')
+
+        # # manufacturer
+        # ret = fuzzer_method.fuzz()
+        # ByIdSendKey(driver, 'deviceDetail_manufacturer', ret)
+        # # Device type
+        # ret = fuzzer_method.fuzz()
+        # ByIdSendKey(driver, 'deviceDetail_device_type', ret)
+        # Comment
+        ret = fuzzer_method.fuzz(100)
+        ByIdSendKey(driver, 'deviceDetail_comment', ret)
+
+        # Done
+        ByIdClicking(driver, 'deviceDetailButtonDone')
+        
+        # Device service
+        ByIdClicking(driver, 'deviceServiceButtonEdit')
+        ByIdClicking(driver, 'deviceServiceSelect__BV_toggle_')
+        ByIdClicking(driver, 'deviceServiceSelect_modbus_rtu_master')
+        ByIdClicking(driver, 'deviceServiceButtonDone')
+        # ByIdClicking(driver, 'deviceConnectionButtonEdit')
+
+        # Addr
+        # for i in range(15):
+        #     ByIdSendKey(driver, 'deviceConnectionInput_address', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_address', address)
+
+        # port
+        # ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_port', port)
+
+        # # Connection Count
+        # ByIdSendKey(driver, 'deviceConnectionInput_connections', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_connections', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_connections', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_connections', CC)
+
+        # # UID
+        # ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_uid', UID)
+
+        # # Timeout
+        # ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_timeout', TimeOut)
+
+        # Done
+        # ByIdClicking(driver, 'deviceConnectionButtonDone')
+
+    def AddDeviceDetail_FENET(self, driver, gret, ret):
+        # print(name)
+        ByXpathClicking(driver, f'//*[@id="lineDevice_device_{str(gret)}_{str(ret)}"]')
+
+        # Edit
+        ByIdClicking(driver, 'deviceDetailButtonEdit')
+
+        # # manufacturer
+        # ret = fuzzer_method.fuzz()
+        # ByIdSendKey(driver, 'deviceDetail_manufacturer', ret)
+        # # Device type
+        # ret = fuzzer_method.fuzz()
+        # ByIdSendKey(driver, 'deviceDetail_device_type', ret)
+        # Comment
+        ret = fuzzer_method.fuzz(100)
+        ByIdSendKey(driver, 'deviceDetail_comment', ret)
+
+        # Done
+        ByIdClicking(driver, 'deviceDetailButtonDone')
+        
+        # Device service
+        ByIdClicking(driver, 'deviceServiceButtonEdit')
+        ByIdClicking(driver, 'deviceServiceSelect__BV_toggle_')
+        ByIdClicking(driver, 'deviceServiceSelect_fenet')
+        ByIdClicking(driver, 'deviceServiceButtonDone')
+        # ByIdClicking(driver, 'deviceConnectionButtonEdit')
+
+        # # Addr
+        # for i in range(15):
+        #     ByIdSendKey(driver, 'deviceConnectionInput_address', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_address', address)
+
+        # # port
+        # ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_port', port)
+
+        # # Connection Count
+        # ByIdSendKey(driver, 'deviceConnectionInput_connections', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_connections', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_connections', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_connections', CC)
+
+        # # UID
+        # ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_uid', UID)
+
+        # # Timeout
+        # ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_timeout', TimeOut)
+
+        # Done
+        # ByIdClicking(driver, 'deviceConnectionButtonDone')
+
+    def AddDeviceDetail_CNET(self, driver, gret, ret):
+        # print(name)
+        ByXpathClicking(driver, f'//*[@id="lineDevice_device_{str(gret)}_{str(ret)}"]')
+
+        # Edit
+        ByIdClicking(driver, 'deviceDetailButtonEdit')
+
+        # # manufacturer
+        # ret = fuzzer_method.fuzz()
+        # ByIdSendKey(driver, 'deviceDetail_manufacturer', ret)
+        # # Device type
+        # ret = fuzzer_method.fuzz()
+        # ByIdSendKey(driver, 'deviceDetail_device_type', ret)
+        # Comment
+        ret = fuzzer_method.fuzz(100)
+        ByIdSendKey(driver, 'deviceDetail_comment', ret)
+
+        # Done
+        ByIdClicking(driver, 'deviceDetailButtonDone')
+        
+        # Device service
+        ByIdClicking(driver, 'deviceServiceButtonEdit')
+        ByIdClicking(driver, 'deviceServiceSelect__BV_toggle_')
+        ByIdClicking(driver, 'deviceServiceSelect_cnet')
+        ByIdClicking(driver, 'deviceServiceButtonDone')
+        # ByIdClicking(driver, 'deviceConnectionButtonEdit')
+
+        # # Addr
+        # for i in range(15):
+        #     ByIdSendKey(driver, 'deviceConnectionInput_address', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_address', address)
+
+        # # port
+        # ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_port', port)
+
+        # # Connection Count
+        # ByIdSendKey(driver, 'deviceConnectionInput_connections', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_connections', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_connections', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_connections', CC)
+
+        # # UID
+        # ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_uid', UID)
+
+        # # Timeout
+        # ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_timeout', TimeOut)
+
+        # Done
+        # ByIdClicking(driver, 'deviceConnectionButtonDone')
+
+    def AddDeviceDetail_MELSEC_SERIAL(self, driver, gret, ret):
+        # print(name)
+        ByXpathClicking(driver, f'//*[@id="lineDevice_device_{str(gret)}_{str(ret)}"]')
+
+        # Edit
+        ByIdClicking(driver, 'deviceDetailButtonEdit')
+
+        # # manufacturer
+        # ret = fuzzer_method.fuzz()
+        # ByIdSendKey(driver, 'deviceDetail_manufacturer', ret)
+        # # Device type
+        # ret = fuzzer_method.fuzz()
+        # ByIdSendKey(driver, 'deviceDetail_device_type', ret)
+        # Comment
+        ret = fuzzer_method.fuzz(100)
+        ByIdSendKey(driver, 'deviceDetail_comment', ret)
+
+        # Done
+        ByIdClicking(driver, 'deviceDetailButtonDone')
+        
+        # Device service
+        ByIdClicking(driver, 'deviceServiceButtonEdit')
+        ByIdClicking(driver, 'deviceServiceSelect__BV_toggle_')
+        ByIdClicking(driver, 'deviceServiceSelect_melsec_serial')
+        ByIdClicking(driver, 'deviceServiceButtonDone')
+        # ByIdClicking(driver, 'deviceConnectionButtonEdit')
+
+        # # Addr
+        # for i in range(15):
+        #     ByIdSendKey(driver, 'deviceConnectionInput_address', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_address', address)
+
+        # # port
+        # ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_port', port)
+
+        # # Connection Count
+        # ByIdSendKey(driver, 'deviceConnectionInput_connections', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_connections', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_connections', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_connections', CC)
+
+        # # UID
+        # ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_uid', UID)
+
+        # # Timeout
+        # ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_timeout', TimeOut)
+
+        # Done
+        # ByIdClicking(driver, 'deviceConnectionButtonDone')
+    
+    def AddDeviceDetail_MELSEC_ETHERNET(self, driver, gret, ret):
+        # print(name)
+        ByXpathClicking(driver, f'//*[@id="lineDevice_device_{str(gret)}_{str(ret)}"]')
+
+        # Edit
+        ByIdClicking(driver, 'deviceDetailButtonEdit')
+
+        # # manufacturer
+        # ret = fuzzer_method.fuzz()
+        # ByIdSendKey(driver, 'deviceDetail_manufacturer', ret)
+        # # Device type
+        # ret = fuzzer_method.fuzz()
+        # ByIdSendKey(driver, 'deviceDetail_device_type', ret)
+        # Comment
+        ret = fuzzer_method.fuzz(100)
+        ByIdSendKey(driver, 'deviceDetail_comment', ret)
+
+        # Done
+        ByIdClicking(driver, 'deviceDetailButtonDone')
+        
+        # Device service
+        ByIdClicking(driver, 'deviceServiceButtonEdit')
+        ByIdClicking(driver, 'deviceServiceSelect__BV_toggle_')
+        ByIdClicking(driver, 'deviceServiceSelect_melsec_ethernet')
+        ByIdClicking(driver, 'deviceServiceButtonDone')
+        # ByIdClicking(driver, 'deviceConnectionButtonEdit')
+
+        # # Addr
+        # for i in range(15):
+        #     ByIdSendKey(driver, 'deviceConnectionInput_address', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_address', address)
+
+        # # port
+        # ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_port', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_port', port)
+
+        # # Connection Count
+        # ByIdSendKey(driver, 'deviceConnectionInput_connections', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_connections', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_connections', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_connections', CC)
+
+        # # UID
+        # ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_uid', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_uid', UID)
+
+        # # Timeout
+        # ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
+        # ByIdSendKey(driver, 'deviceConnectionInput_timeout', TimeOut)
 
     def AddDeviceTag(self, driver, tag, addr, length, valueType, interval):
         # + click
@@ -222,23 +514,24 @@ class AddToContents(object):
         # Category
         ByIdClicking(driver, 'datamapperInfo_category__BV_toggle_')
         ByIdClicking(driver, 'datamapperInfo_category_device')
+        
         # Group
-        ByIdClicking(driver, 'datamapperInfo_group__BV_toggle_')
-        ByIdClicking(driver, f'datamapperInfo_group_{str(Group_name)}')
+        ByXpathClicking(driver, f'//*[@id="datamapperInfo_group__BV_toggle_"]')
+        ByXpathClicking(driver, f'//*[@id="datamapperInfo_group_{str(Group_name)}"]')
 
         # Device
-        ByIdClicking(driver, 'datamapperInfo_device__BV_toggle_')
-        ByIdClicking(driver, f'datamapperInfo_device_{str(Device_name)}')
-        
+        ByIdClicking(driver, f'datamapperInfo_device__BV_toggle_')
+        ByXpathClicking(driver, f'//*[@id="datamapperInfo_device_{str(Device_name)}"]')
+
         # Tag
-        ByIdClicking(driver, 'datamapperInfo_tag__BV_toggle_')
+        ByIdClicking(driver, f'datamapperInfo_tag__BV_toggle_')
         ByIdClicking(driver, f'datamapperInfo_tag_{str(tag_name)}')
     
         # Value Type
-        ByIdClicking(driver, 'datamapperInfo_valueType__BV_toggle_')
+        ByIdClicking(driver, f'datamapperInfo_valueType__BV_toggle_')
         ByIdClicking(driver, f'datamapperInfo_valueType_{valueType}')
         # Done
-        ByIdClicking(driver, 'datamapperAddDone')
+        ByIdClicking(driver, f'datamapperAddDone')
 
     def AddServerTag100(self, driver, IDnum, addr, Group_name, Device_name, tag_num, valueType):
         # add the detail
