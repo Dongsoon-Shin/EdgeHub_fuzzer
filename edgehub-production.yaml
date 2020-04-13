@@ -1234,24 +1234,53 @@ function:
               "received" => %{
                 "$action" => "elixir",
                 "value" => """
-                  [_|paths] = v["path"] |> String.split("/")
+                  [_|paths] = v["path"] |> URI.decode_www_form() |> String.split("/")
                   path = case paths do
                     [type, "virtual", device, tag] -> [type, "virtual", "", device, tag]
                     [type, "database", device, tag] -> [type, "database", "", device, tag]
                     _ -> paths
                   end
-                  case v["method"] do
-                    "PUT" ->
-                      value = case Poison.decode(v["body"]) do
-                        {:error, %Poison.ParseError{}} -> v["body"]
-                        {:ok, map} -> map
-                      end
-                      set(["value"] ++ path, value)
-                      %{"result" => "success"}
-                    _ ->
-                      typed = get(["typed"] ++ path)
-                      %{"result" => "success", "value" => typed["value"]}
-                  end |> Poison.encode!()
+                  if path do
+                    cond do
+                      length(path) > 3 ->
+                        category = path |> Enum.at(1)
+                        group = path |> Enum.at(2)
+                        device = path |> Enum.at(3)
+                        tag = path |> Enum.at(4)
+                        case v["method"] do
+                          "PUT" ->
+                            case category do
+                              "virtual" ->
+                                value = case Poison.decode(v["body"]) do
+                                  {:error, %Poison.ParseError{}} -> v["body"]
+                                  {:ok, map} -> map
+                                end
+                                tags = get("tags") || []
+                                tag = tags |> Enum.filter(fn x ->
+                                  Log.info("http server: x: " <> inspect x)
+                                  (x["properties"]["_category"] == category) &&
+                                  ((x["properties"]["_group"] || "") == group) &&
+                                  (x["properties"]["_device"] == device) &&
+                                  (x["name"] == tag)
+                                end) |> Enum.at(0)
+                                Log.info("http server: tag: " <> inspect tag)
+                                if tag do
+                                  typed = M.transform(value, tag["properties"]["_condition"]["valueType"])
+                                  Log.info("http server: typed: " <> inspect typed)
+                                  set(["typed"] ++ path, typed)
+                                  %{"result" => "success"}
+                                else
+                                  %{"result" => "error", "reason" => "Unknown tag"}
+                                end
+                              _ -> %{"result" => "error", "reason" => "Only virtual tags allowed for HTTP PUT"}
+                            end
+                          _ ->
+                            typed = get(["typed"] ++ path)
+                            %{"result" => "success", "value" => typed["value"]}
+                        end |> Poison.encode!()
+                      true -> %{"result" => "error", "reason" => "incorrect path"} |> Poison.encode!()
+                    end
+                  end
                 """
               }
             }
@@ -2394,11 +2423,19 @@ instance:
                       "float" ->
                         case byte_size(value) do
                           4 ->
-                            <<typed_value::float-size(32)>> = value
-                            {typed_value, value}
+                            typed_value = try do
+                              <<typed_value::float-size(32)>> = value
+                              {typed_value, value}
+                            rescue
+                              _ -> {nil, nil}
+                            end
                           8 ->
-                            <<typed_value::float-size(64)>> = value
-                            {typed_value, value}
+                            try do
+                              <<typed_value::float-size(64)>> = value
+                              {typed_value, value}
+                            rescue
+                              _ -> {nil, nil}
+                            end
                           _ ->
                             size = bit_size(value)
                             <<signed_value::signed-size(size)>> = value
@@ -10433,7 +10470,9 @@ service:
             $action: "elixir"
             value: |
               tags = get(["config", "tags"], project: "edgehub") || []
-              tags |> Enum.map(fn x ->
+              tags |> Enum.filter(fn x ->
+                ["device", "virtual"] |> Enum.member?(x["properties"]["_category"])
+              end) |> Enum.map(fn x ->
                 category = x["properties"]["_category"] || ""
                 group = x["properties"]["_group"] || ""
                 device = x["properties"]["_device"] || ""
