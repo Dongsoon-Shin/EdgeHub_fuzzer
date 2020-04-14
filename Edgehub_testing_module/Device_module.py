@@ -43,7 +43,7 @@ def modTCP(start, driver, ret, df,
     # print("Start time: ", start_time)
     
     # first time create device group and device
-    # start.ConfigureClear(driver)
+    start.ConfigureClear(driver)
     start.AddDevice(driver, ret)
 
     # Commit
@@ -79,9 +79,9 @@ def modTCP(start, driver, ret, df,
 
     #driver.quit()
 
-def ModbusTCP_test(dv, dt):
+def ModbusTCP_test(dv, dt, count):
     # croll a excel data which involving a server tags
-    df = pd.read_excel('ServerTags.xlsx', index=False)
+    df = pd.read_excel('Device_tag_8192.xlsx', index=False)
     del df['Unnamed: 0']
     # print(len(df))
     # print(df)
@@ -99,15 +99,15 @@ def ModbusTCP_test(dv, dt):
     # Create object that selenium running module
     start = selenium_method.AddToContents()
 
-    # start, driver, iter, interval, df, ret, Device_UID = 55, Device_addr = '127.0.0.1', Device_port = 502, Device_count = 1, Device_TimeOut = 1000
     Device_UID = 55
     Device_interval = dv
     Device_addr = '127.0.0.1'
     Device_port = 502
     Device_count = 1
     Device_TImeOut = dt
-    
-    modTCP(start, driver, ret, df, 10, Device_interval, Device_UID, Device_addr, Device_port, Device_count, Device_TImeOut)
+
+    # start, driver, ret, df, iter
+    modTCP(start, driver, ret, df, count, Device_interval, Device_UID, Device_addr, Device_port, Device_count, Device_TImeOut)
 
     start.Commit(driver)
     time.sleep(5)
@@ -124,7 +124,7 @@ def ModbusTCP_test(dv, dt):
             count += 1
     print(f'[*] ModbusTCP success data results: {count}')
     print(f'[!] driver quit')
-    driver.quit()
+    # driver.quit()
 
     # print(f'[!] measuring CPU/MEM usage of the erl process for 5 seconds. Please wait.')
     # for proc in psutil.process_iter(['name']):
