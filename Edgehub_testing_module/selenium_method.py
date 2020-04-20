@@ -15,7 +15,7 @@ def ByClassClicking(driver, id_name):
     time.sleep(0.1)
 
 def ByIdSendKey(driver, id_name, strings):
-    driver.find_element_by_id(id_name).send_keys(strings)
+    driver.find_element_by_id(id_name).send_keys(str(strings))
     time.sleep(0.1)
 
 def ByXpathClicking(driver, id_name):
@@ -145,6 +145,8 @@ class AddToContents(object):
         ByIdSendKey(driver, 'deviceConnectionInput_uid', UID)
 
         # Timeout
+        ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
+        ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
         ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
         ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
         ByIdSendKey(driver, 'deviceConnectionInput_timeout', Keys.BACKSPACE)
@@ -520,13 +522,13 @@ class AddToContents(object):
         ByXpathClicking(driver, f'//*[@id="datamapperInfo_group_{str(Group_name)}"]')
 
         # Device
-        ByIdClicking(driver, f'datamapperInfo_device__BV_toggle_')
+        ByXpathClicking(driver, f'//*[@id="datamapperInfo_device__BV_toggle_"]')
         ByXpathClicking(driver, f'//*[@id="datamapperInfo_device_{str(Device_name)}"]')
 
         # Tag
-        ByIdClicking(driver, f'datamapperInfo_tag__BV_toggle_')
-        ByIdClicking(driver, f'datamapperInfo_tag_{str(tag_name)}')
-    
+        ByXpathClicking(driver, f'//*[@id="datamapperInfo_tag__BV_toggle_"]')
+        ByXpathClicking(driver, f'//*[@id="datamapperInfo_tag_{str(tag_name)}"]')
+
         # Value Type
         ByIdClicking(driver, f'datamapperInfo_valueType__BV_toggle_')
         ByIdClicking(driver, f'datamapperInfo_valueType_{valueType}')
@@ -546,16 +548,17 @@ class AddToContents(object):
         # Category
         ByIdClicking(driver, 'datamapperInfo_category__BV_toggle_')
         ByIdClicking(driver, 'datamapperInfo_category_device')
+
         # Group
-        ByIdClicking(driver, 'datamapperInfo_group__BV_toggle_')
-        ByIdClicking(driver, f'datamapperInfo_group_{str(Group_name)}')
+        ByXpathClicking(driver, f'//*[@id="datamapperInfo_group__BV_toggle_"]')
+        ByXpathClicking(driver, f'//*[@id="datamapperInfo_group_{str(Group_name)}"]')
 
         # Device
-        ByIdClicking(driver, 'datamapperInfo_device__BV_toggle_')
-        ByIdClicking(driver, f'datamapperInfo_device_{str(Device_name)}')
+        ByXpathClicking(driver, f'//*[@id="datamapperInfo_device__BV_toggle_"]')
+        ByXpathClicking(driver, f'//*[@id="datamapperInfo_device_{str(Device_name)}"]')
         
         # Tag
-        ByIdClicking(driver, 'datamapperInfo_tag__BV_toggle_')
+        ByXpathClicking(driver, f'//*[@id="datamapperInfo_tag__BV_toggle_"]')
         ByXpathClicking(driver, f'/html/body/div[1]/div[2]/div/div[2]/div/body/div/main/div/div[5]/div[2]/div/form/table/tbody/tr[3]/td[8]/div/div/ul/li[{tag_num}]/a')
         # //*[@id="datamapperInfo_tag_"9550"_uint"]
         # ByIdClicking(driver, f'datamapperInfo_tag_{str(tag_name)}')

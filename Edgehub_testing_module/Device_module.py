@@ -57,21 +57,21 @@ def modTCP(start, driver, ret, df,
         start.AddDeviceTag(driver, df['tag'][i], df['addr'][i], df['length'][i], df['valueType'][i], str(interval))
     
     # server add
-    # start.AddServer(driver, ret)
+    start.AddServer(driver, ret)
 
-    # # Server Uids, port
-    # server_UIDs = 55
-    # server_port = 503
-    # start.AddServerDetail(driver, str(server_UIDs), str(server_port))
+    # Server Uids, port
+    server_UIDs = 55
+    server_port = 503
+    start.AddServerDetail(driver, str(server_UIDs), str(server_port))
     
-    # # server tag add
-    # for i in range(iter):
-    #     if len(df) <= 50:
-    #         # driver, IDnum, addr, Group_name, Device_name, tag_name, valueType
-    #         start.AddServerTag(driver, server_UIDs, i+1, ret , ret, df['tag'][i] , df['valueType'][i])
-    #     else:
-    #         # driver, IDnum, addr, Group_name, Device_name, tag_name, valueType
-    #         start.AddServerTag100(driver, server_UIDs, i+1, ret, ret, i+1 , df['valueType'][i])
+    # server tag add
+    for i in range(interation):
+        if len(df) <= 50:
+            # driver, IDnum, addr, Group_name, Device_name, tag_name, valueType
+            start.AddServerTag(driver, server_UIDs, i+1, ret , ret, df['tag'][i] , df['valueType'][i])
+        else:
+            # driver, IDnum, addr, Group_name, Device_name, tag_name, valueType
+            start.AddServerTag100(driver, server_UIDs, i+1, ret, ret, i+1 , df['valueType'][i])
 
     # start.Commit(driver)
 
@@ -81,7 +81,7 @@ def modTCP(start, driver, ret, df,
 
 def ModbusTCP_test(dv, dt, count):
     # croll a excel data which involving a server tags
-    df = pd.read_excel('Device_tag_8192.xlsx', index=False)
+    df = pd.read_excel('ServerTags.xlsx', index=False)
     del df['Unnamed: 0']
     # print(len(df))
     # print(df)
